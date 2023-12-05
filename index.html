@@ -1,426 +1,3 @@
-<!DOCTYPE html>
-<!--Siyamthanda Ndlovu u21582735-->
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="css/styling.css">
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
-    </head>
-    <body>
-
-        <div class="divLogoHead" >
-            <img src="images/HorizontalLogo.png" class = "imgHeadLogo"/>
-        </div>
-
-        <div class="divDivide" >
-
-        </div>
-
-        <div class="searchBar" >
-            <h3 >Search</h3>
-            <input type="search" name="inputSearchBar" id="inputSearchBar" style="width: 500px"> 
-            <button class="buttonSearchBar" value="Search">Search</button>
-        </div>
-
- 
-        <div class="navBarTagDiv"> 
-            <nav class="navTag">
-                <a href="https://wheatley.cs.up.ac.za/u21582735/COS216/index.html">Launch Page</a> | <a href="index.html">Cars Page</a> |<a href="Brands.html">Brands</a> | <a href="FindCar.html">Find a Car</a> | <a href="Compare.html">Compare Cars</a>
-            </nav>
-        </div>
-
-        <div class="divFilterCars">
-            <h3 >Filter Cars</h3>
-            <form class ="formFilterCars">
-                <input type="checkbox" class="checkboxFilterCars" id = "chkboxShowAll">Show All |
-                <input type="checkbox" class="checkboxFilterCars"> Auto Gearshift 
-                <input type="checkbox" class="checkboxFilterCars"> Manual Gearshift | 
-                <input type="checkbox" class="checkboxFilterCars"> Chevrolet
-                <input type="checkbox" class="checkboxFilterCars"> Mercedes-Benz 
-                <input type="checkbox" class="checkboxFilterCars"> BMW 
-                <input type="checkbox" class="checkboxFilterCars"> Delos 
-                <input type="checkbox" class="checkboxFilterCars"> Mutt Cutts 
-                <input type="checkbox" class="checkboxFilterCars"> Bruce Wayne Enterprises 
-                <input type="checkbox" class="checkboxFilterCars"> Mystery Machine 
-                <input type="submit" value="Apply Filters">
-            </form>
-        </div>
-
-        <div class="divSortCars">
-            <h3 >Sort Cars</h3>
-            <form class="formSortCars">
-                <input type="radio" class="radioSortCars"> None |
-                <input type="radio" class="radioSortCars"> Year | 
-                <input type="radio" class="radioSortCars"> Cost | 
- 
-                <input type="submit" value="Sort Cars">
-            </form>
-        </div>
-        <br>
-
-        <div class="divDivide" >
-        </div>
-
-
-        <h1 class="pageTitles" >Car Gallery</h1>
-
-<!-- VERY IMPORTANT
- -->
-
-<div id="DisplayAllCars">
-
-</div>
-
-
-
-<!-- VERY IMPORTANT
- -->
-
-    <!--<div>
-        <table class="NavBarTable">
-            <tr>
-                <td class="NavBarElement"> <a href="Brands.html">Brands</a> </td> 
-                <td class="NavBarElement"> <a href="FindCar.html">Find a Car</a> </td> 
-                <td class="NavBarElement"> <a href="Compare.html">Compare Cars</a> </td> 
-            </tr>
-        </table>
-    </div>-->
-
-
-<!--
-       <div class="carDiv"> 
-            <img class ="imgCars" src="images/The Bumble Bee car.jpg" />
-            <table class="carDesc" >
-                <tr>
-                    <td>Car Brand</td> <td>Chevrolet</td>
-                </tr>
-                <tr>
-                    <td>Model</td> <td>The Bumble</td>
-                </tr>
-                <tr>
-                    <td>Year</td> <td>2013</td>
-                </tr>
-                <tr>
-                    <td>Number of Seats</td> <td>4</td>
-                </tr>
-  
-                <tr>
-                    <td>Gearshift</td> <td>Auto</td>
-                </tr>
-                <tr>
-                    <td>Status</td> <td>In Production</td>
-                </tr>  
-                <tr>
-                    <td>Best Use</td> <td>Daily Transport</td>
-                </tr> 
-                <tr>
-                    <td>Cost</td> <td>R1 697 600</td>
-                </tr>
-            </table>
-        </div>
-
-
--->
-
-
-<!--//////////////////////////////////////////////////////////////////////////-->
-<script language="javascript">
-var arrayOfCarImageIDs = [];
-
-/* This is what we do when the page opens at the very beginning */
-
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////
-function LoadMatchingPictures() {
-    console.info('ENTERING LOOP ITERATION ');
-for (var i = 0; arrayOfCarImageIDs.length; i++) {
-
-console.info('ENTERING LOOP ITERATION ', i);
-var xht = new XMLHttpRequest();
-//https://wheatley.cs.up.ac.za/api/getimage?brand=audi&model=R8
-var openGETURL = 'https://wheatley.cs.up.ac.za/api/getimage?';
-// + 'brand = '
-    xht.open('GET' , 'https://wheatley.cs.up.ac.za/api/getimage?'+arrayOfCarImageIDs[i] , true);//because everything above has to load first? idk CHECK^^^^
-    //xht.setRequestHeader("Content-Type", "application/json;");
-   console.log(xht);
-    xht.onreadystatechange = function() {
-        if (xht.readyState == 2) {
-            //idk display something
-            console.log('the ready state is 2');
-        }
-        else if (xht.readyState==4 && xht.status==200) { //everything is ready
-            var VariablearrayOfCarImageIDs = arrayOfCarImageIDs[i];
-            var DivTarget = document.getElementById(VariablearrayOfCarImageIDs);
-            if (DivTarget == null) {
-                console.error('the Car Image Array we want to display in is empty was not found; Exiting the funciton');//can you like? just return;
-            return;
-            }
-
-            console.log('Response Text Type' , xht.responseType , xht.responseText);
-            //var API_VALUES = encodeURI(xht.responseText);//but if its json, dont we just parse json?
-            var FinalInnerHTML = '';
-
-
-            //jQuery("#arrayOfCarImageIDs[i]").attr('src = API_VALUES',);
-           // $(VariablearrayOfCarImageIDs).attr("src", "https://www.w3docs.com/uploads/media/default/0001/05/9eb9e9cba721ba3bb5e653751449173197f2924a.png");
-            $(VariablearrayOfCarImageIDs).attr("src", xht.responseText);
-
-            /* FinalInnerHTML = ' <div class="API_Details"> <img class ="imgCars" src= "' 
-            + API_VALUES + '" alt="API Car Image"></div> <br>'; */
-
-           // console.log(i,' IS =');//note i belongs to for loop
-
-            console.log(FinalInnerHTML);
-            DivTarget.innerHTML += FinalInnerHTML;//moving this in instead of having it outside fixed the issue of the error being
-           // }
- 
-            
-        }
-    }
-    
- console.log('Response Should Be Images' , xht.responseText);
-
-//var sendingParam = ' {"brand":"audi"} ';
-xht.send(); 
-}//end of looping for sending the images specifically
-}
-//////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//window.onload = function() {//as in load all the pics when the do loads
-
-var xhrPostCarText = new XMLHttpRequest();
-
-/* THIS IS POST FOR THE  */
-xhrPostCarText.open('POST' , 'https://wheatley.cs.up.ac.za/api/' , true);
-xhrPostCarText.setRequestHeader("Content-Type", "application/json");
-   console.log(xhrPostCarText);
-
-   xhrPostCarText.onreadystatechange = function() {
-        if (xhrPostCarText.readyState == 2) {
-            //idk display something
-            console.log('the ready state is 2');
-        }
-        else if (xhrPostCarText.readyState==4 && xhrPostCarText.status==200) { //everything is ready
-            var DivTarget = document.getElementById('DisplayAllCars');
-
-
-            var API_VALUES = JSON.parse(xhrPostCarText.responseText);//json parse so we can see that its of value
-           // var API_VALUES = xhrPostCarText.responseText.data;//json parse so we can see that its of value
-            //var API_VALUES = JSON.parse(xhrPostCarText.responseText.data);
-            console.log('Response Text data' , xhrPostCarText.responseType , xhrPostCarText.responseText);
-            console.log( JSON.parse(xhrPostCarText.responseText));
-            console.log(API_VALUES); 
-
-            console.log(API_VALUES);
-            //var API_VALUES = encodeURI(xhrPostCarText.responseText);//but if its json, dont we just parse json?
-
-            //console.log('This is the response text from this request' , API_VALUES);
-            var FinalInnerHTML = '';
-            console.log('The Loggin #4:' , API_VALUES)
-            /* for (var i in API_VALUES) */   
-
-            for(var i=0; i < 20; i++ )  {
-                console.log(API_VALUES.data[i]);
-            FinalInnerHTML = ' <div class="carDiv" id="API_Details_CarDescDiv_'+i+'">  '
-            
-            +' <br> <table class="carDesc" > <tr> <td>Car Brand</td> <td>'+ API_VALUES.data[i].make+'</td></tr> '
-            +' <tr> <td>Model </td> <td>'+ API_VALUES.data[i].model +'</td></tr> '
-            +' <tr> <td>Year </td> <td>'+ API_VALUES.data[i].year_to +'</td></tr>'
-            +' <tr> <td>Generation </td> <td>'+ API_VALUES.data[i].generation +'</td></tr>'
-            +' <tr> <td>Series </td> <td>'+ API_VALUES.data[i].series +'</td></tr>'
-            +' <tr> <td>Number of Seats </td> <td>'+ API_VALUES.data[i].number_of_seats +'</td></tr>'
-            +' <tr> <td>Transmission </td> <td>'+ API_VALUES.data[i].transmission +'</td></tr>'
-            +' <tr> <td>Max Speed </td> <td>'+ API_VALUES.data[i].max_speed_km_per_h +'</td></tr>'
-           // +'<img class ="imgCars" id="API_CarImage' +i+ '">'
-           +'<img class ="imgCars" id="brand='+ API_VALUES.data[i].make +'&model=' + API_VALUES.data[i].model + '">'
-            +'</div> <br>';
-
-            arrayOfCarImageIDs[i] = 'brand='+ API_VALUES.data[i].make +'&model=' + API_VALUES.data[i].model ;
-            console.log('The ID of this Image:' , arrayOfCarImageIDs[i]);
-
-////https://wheatley.cs.up.ac.za/api/getimage?brand=audi&model=R8
-
-            console.log(i,' IS =');//note i belongs to for loop
-
-            console.log(FinalInnerHTML);
-            DivTarget.innerHTML += FinalInnerHTML;//moving this in instead of having it outside fixed the issue of the error being
-            
-        
- 
-///////////////////////////////////////////////////////////////////////////////////
-
-var xht = new XMLHttpRequest();
-//https://wheatley.cs.up.ac.za/api/getimage?brand=audi&model=R8
-var openGETURL = 'https://wheatley.cs.up.ac.za/api/getimage?';
-// + 'brand = '
-    xht.open('GET' , 'https://wheatley.cs.up.ac.za/api/getimage?' + arrayOfCarImageIDs[i] , false);//because everything above has to load first? idk CHECK^^^^
-   console.log(xht);
-    xht.onreadystatechange = function() {
-        
-        if (xht.readyState == 2) {
-            //idk display something
-            console.log('the ready state is 2 and its not ready i guess?');
-        }
-        else if (xht.readyState==4 && xht.status==200 && xhrPostCarText.status==200 && xhrPostCarText.readyState==4) { //everything is ready
-            var imageIdTemp = arrayOfCarImageIDs[i];
-            var DivTarget = document.getElementById(imageIdTemp);
-
-            if (DivTarget == null) {
-                console.error('the Car Image Array we want to display in is empty was not found; Exiting the funciton');//can you like? just return;
-            return;
-            }
-
-            console.log('Response Text Type for CAR IMAGE' , xht.responseType , xht.responseText);
-            //var API_VALUES = encodeURI(xht.responseText);//but if its json, dont we just parse json?
-            var FinalInnerHTML = '';
-
-
-            //jQuery("#arrayOfCarImageIDs[i]").attr('src = API_VALUES',);
-            //$("#arrayOfCarImageIDs[i]").attr("src", "https://www.w3docs.com/uploads/media/default/0001/05/9eb9e9cba721ba3bb5e653751449173197f2924a.png");
-            $(imageIdTemp).attr("src", "https://wheatley.cs.up.ac.za/api/images/models/ac_cobra.jpg");
-
-            /* FinalInnerHTML = ' <div class="API_Details"> <img class ="imgCars" src= "' 
-        
-                + API_VALUES + '" alt="API Car Image"> </div> <br>'; */
-           // console.log(i,' IS =');//note i belongs to for loop
-
-            console.log(FinalInnerHTML);
-            DivTarget.innerHTML += FinalInnerHTML;//moving this in instead of having it outside fixed the issue of the error being
-           // }
- 
-            
-        }
-    }
-    
- console.log('Response Should Be Images' , xht.responseText);
-
-//var sendingParam = ' {"brand":"audi"} ';
-xht.send(); 
-///////////////////////////////////////////////////////////////////////////////////
-
-       
-        
-        
-        
-        
-        
-        
-        }
-            
-            /*jQuery("#imageID").attr('src',);*/
-            
-            //console.log(FinalInnerHTML);
-            //DivTarget.innerHTML += FinalInnerHTML;
-            
-        }
-    }
- console.log('Response Text Text' , xhrPostCarText.responseText);
-//var sendingParamArrayToReturn = "[ 'make', 'model', 'generation',  'series', 'number_of_seats', 'height_mm', 'number_of_cylinders', 'engine_type', 'transmission', 'max_speed_km_per_h";
-var sendingParam = ' {"studentnum":"u21582735" , "apikey":"a9198b68355f78830054c31a39916b7f" , "type":"GetAllCars" , "return": "*", "limit":20 } ';
-
-xhrPostCarText.send(sendingParam); 
-
-
- //LoadMatchingPictures();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*so i should get the cars first, creating ids per table element ModelElement and brand elemement neh
-then for each car, loop and sub the brand name and model into the open url and this should be for the loop
-returning all the fo i in getelements by class or something*/
-
-
-
-
-
-//}//document.onload
-
-
-
-
-
-</script>
-<!--//////////////////////////////////////////////////////////////////////////////-->
-
-</body>
-
-</html>
 
 
 <!DOCTYPE html>
@@ -434,7 +11,7 @@ returning all the fo i in getelements by class or something*/
     <body>
 
         <div class="divLogoHead" >
-            <img src="images/HorizontalLogo.png" class = "imgHeadLogo"/>
+            <img src="src/images/HorizontalLogo.png" class = "imgHeadLogo"/>
         </div>
 
         <div class="divDivide" >
@@ -487,7 +64,7 @@ returning all the fo i in getelements by class or something*/
 
 
         <div class="carDiv"> 
-            <img class ="imgCars" src="images/12-mercedes-benz-vehicles-concept-cars-vision-avtr-3400x1440.png" />
+            <img class ="imgCars" src="src/images/12-mercedes-benz-vehicles-concept-cars-vision-avtr-3400x1440.png" />
             <table class="carDesc" >
                 <tr>
                     <td>Car Brand</td> <td>Mercedes-Benz</td>
@@ -530,7 +107,7 @@ returning all the fo i in getelements by class or something*/
         <br><br><br>
 
         <div class="carDiv"> 
-            <img class ="imgCars" src="images/bmw_x3_2017_07.jpg" />
+            <img class ="imgCars" src="src/images/bmw_x3_2017_07.jpg" />
             <table class="carDesc" >
                 <tr>
                     <td>Car Brand</td> <td>BMW</td>
@@ -574,7 +151,7 @@ returning all the fo i in getelements by class or something*/
         <br><br><br>
 
         <div class="carDiv"> 
-            <img class ="imgCars" src="images/Bale mobile 1.jpg" />
+            <img class ="imgCars" src="src/images/Bale mobile 1.jpg" />
             <table class="carDesc" >
                 <tr>
                     <td>Car Brand</td> <td>Bruce Wayne Enterprises</td>
@@ -617,7 +194,7 @@ returning all the fo i in getelements by class or something*/
         <br><br><br>
 
         <div class="carDiv"> 
-            <img class ="imgCars" src="images/scooby doo van 2087aa40f93_hd_1972-z-movie-car-scooby-doo.jpg" />
+            <img class ="imgCars" src="src/images/scooby doo van 2087aa40f93_hd_1972-z-movie-car-scooby-doo.jpg" />
             <table class="carDesc" >
                 <tr>
                     <td>Car Brand</td> <td>Mystery Machine</td>
@@ -661,7 +238,7 @@ returning all the fo i in getelements by class or something*/
         <br><br><br>
 
          <div class="carDiv"> 
-            <img class ="imgCars" src="images/bmw-m4-speed-yellow-03.jpg" />
+            <img class ="imgCars" src="src/images/bmw-m4-speed-yellow-03.jpg" />
             <table class="carDesc" >
                 <tr>
                     <td>Car Brand</td> <td>BMW</td>
@@ -704,7 +281,7 @@ returning all the fo i in getelements by class or something*/
         <br><br><br>
         
         <div class="carDiv"> 
-            <img class ="imgCars" src="images/furious-charger.jpg"/>
+            <img class ="imgCars" src="src/images/furious-charger.jpg"/>
             <table class="carDesc" >
                 <tr>
                     <td>Car Brand</td> <td>Chevrolet</td>
@@ -748,7 +325,7 @@ returning all the fo i in getelements by class or something*/
         <br><br><br>
 
         <div class="carDiv"> 
-            <img class ="imgCars" src="images/westworldubercarvictor-martinez-veh-rideshare-frontperspective-v01-190208-vm.jpg" />
+            <img class ="imgCars" src="src/images/westworldubercarvictor-martinez-veh-rideshare-frontperspective-v01-190208-vm.jpg" />
             <table class="carDesc" >
                 <tr>
                     <td>Car Brand</td> <td>Delos</td>
@@ -791,7 +368,7 @@ returning all the fo i in getelements by class or something*/
         <br><br><br>
 
         <div class="carDiv"> 
-            <img class ="imgCars" src="images/Mercedes-Benz-G-Class-Right-Front-Three-Quarter-58261.jpg" />
+            <img class ="imgCars" src="src/images/Mercedes-Benz-G-Class-Right-Front-Three-Quarter-58261.jpg" />
             <table class="carDesc" >
                 <tr>
                     <td>Car Brand</td> <td>Mercedes-Benz</td>
@@ -834,7 +411,7 @@ returning all the fo i in getelements by class or something*/
         <br><br><br>
 
         <div class="carDiv"> 
-            <img class ="imgCars" src="images/Fast furious Letty Chevrolet.jpg" />
+            <img class ="imgCars" src="src/images/Fast furious Letty Chevrolet.jpg" />
             <table class="carDesc" >
                 <tr>
                     <td>Car Brand</td> <td>Chevrolet</td>
@@ -877,7 +454,7 @@ returning all the fo i in getelements by class or something*/
         <br><br><br>
         
         <div class="carDiv"> 
-            <img class ="imgCars" src="images/included camera shot of batfleck mercedes f751f8c-mercedes-justiceleague-08.jpg" />
+            <img class ="imgCars" src="src/images/included camera shot of batfleck mercedes f751f8c-mercedes-justiceleague-08.jpg" />
             <table class="carDesc" >
                 <tr>
                     <td>Car Brand</td> <td>Mercedes-Benz</td>
@@ -920,7 +497,7 @@ returning all the fo i in getelements by class or something*/
         <br><br><br>
         
         <div class="carDiv"> 
-            <img class ="imgCars" src="images/westworld lux suv victor-martinez-veh-luxsuv-05-v3-190206-vm.jpg" />
+            <img class ="imgCars" src="src/images/westworld lux suv victor-martinez-veh-luxsuv-05-v3-190206-vm.jpg" />
             <table class="carDesc" >
                 <tr>
                     <td>Car Brand</td> <td>Delos</td>
@@ -963,7 +540,7 @@ returning all the fo i in getelements by class or something*/
         <br><br><br>
 
         <div class="carDiv"> 
-            <img class ="imgCars" src="images/Dumb and Dumber Car 1436991864-0876ea6aaed85d846d5f06daf1fb12af.jpg" />
+            <img class ="imgCars" src="src/images/Dumb and Dumber Car 1436991864-0876ea6aaed85d846d5f06daf1fb12af.jpg" />
             <table class="carDesc" >
                 <tr>
                     <td>Car Brand</td> <td>Mutt Cuts</td>
@@ -1006,7 +583,7 @@ returning all the fo i in getelements by class or something*/
         <br><br><br>
 
         <div class="carDiv"> 
-            <img class ="imgCars" src="images/The Bumble Bee car.jpg" />
+            <img class ="imgCars" src="src/images/The Bumble Bee car.jpg" />
             <table class="carDesc" >
                 <tr>
                     <td>Car Brand</td> <td>Chevrolet</td>
@@ -1073,7 +650,7 @@ console.log(arrayOfCarFeatureObjects);
 var arrayOfCarImages = document.getElementsByClassName('imgCars');
 console.log(arrayOfCarImages);
 
-$('.imgCars').attr('src','images/The Bumble Bee car.jpg');//so alla the srcs are changed
+$('.imgCars').attr('src','src/images/The Bumble Bee car.jpg');//so alla the srcs are changed
 
 
 
