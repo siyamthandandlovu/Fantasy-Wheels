@@ -1,3 +1,246 @@
 {
-    "name":"Bat Mobile"
+    "cars": [
+
+{
+  "carDiv": {
+    "imgCars": {
+      "src": "images/12-mercedes-benz-vehicles-concept-cars-vision-avtr-3400x1440.png"
+    },
+    "carDesc": {
+      "Car Brand": "Mercedes-Benz",
+      "Model": "VISION AVTR",
+      "Year": 2122,
+      "Number of Seats": 2,
+      "Car Features": {
+        "carFeats": [
+          "Carbon Emission Free",
+          "Organic Battery Technology",
+          "Exceptional fast charging capability",
+          "Intuitive control",
+          "Bionic formal language"
+        ]
+      },
+      "Gearshift": "Auto",
+      "Status": "In Production",
+      "Best Use": "Daily Transport",
+      "Cost": "R67 089 000"
+    }
+  }
 }
+,
+{
+    "carDiv": {
+      "imgCars": {
+        "src": "images/The Bumble Bee car.jpg"
+      },
+      "carDesc": {
+        "Car Brand": "<link>Chevrolet</link>",
+        "Model": "The Bumble",
+        "Year": 2013,
+        "Number of Seats": 4,
+        "Car Features": {
+          "carFeats": [
+            "Car Communication",
+            "Navigation system",
+            "Bluetooth",
+            "Remote start"
+          ]
+        },
+        "Gearshift": "Auto",
+        "Cost": "R1 697 600",
+        "Status": "In Production",
+        "Best Use": "Daily Transport"
+      }
+    }
+  }
+,
+{
+    "carDiv": {
+      "imgCars": {
+        "src": "images/Dumb and Dumber Car 1436991864-0876ea6aaed85d846d5f06daf1fb12af.jpg"
+      },
+      "carDesc": {
+        "Car Brand": "Mutt Cuts",
+        "Model": "Bambridge 68",
+        "Year": 2308,
+        "Number of Seats": 6,
+        "Car Features": {
+          "carFeats": [
+            "Backup camera",
+            "Navigation system",
+            "Bluetooth",
+            "Remote start",
+            "Blind spot monitoring"
+          ]
+        },
+        "Gearshift": "Auto",
+        "Cost": "R780 000 000",
+        "Status": "In Production",
+        "Best Use": "Daily Transport"
+      }
+    }
+  }
+,
+{
+    "carDiv": {
+      "imgCars": {
+        "src": "images/Dumb and Dumber Car 1436991864-0876ea6aaed85d846d5f06daf1fb12af.jpg"
+      },
+      "carDesc": {
+        "Car Brand": "Mutt Cuts",
+        "Model": "Bambridge 68",
+        "Year": 2308,
+        "Number of Seats": 6,
+        "Car Features": {
+          "carFeats": [
+            "Backup camera",
+            "Navigation system",
+            "Bluetooth",
+            "Remote start",
+            "Blind spot monitoring"
+          ]
+        },
+        "Gearshift": "Auto",
+        "Cost": "R780 000 000",
+        "Status": "In Production",
+        "Best Use": "Daily Transport"
+      }
+    }
+  }
+,
+{
+    "carDiv": {
+      "imgCars": {
+        "src": "images/westworld lux suv victor-martinez-veh-luxsuv-05-v3-190206-vm.jpg"
+      },
+      "carDesc": {
+        "Car Brand": "<link>Delos</link>",
+        "Model": "Bambridge 68",
+        "Year": 2308,
+        "Number of Seats": 6,
+        "Car Features": {
+          "carFeats": [
+            "Backup camera",
+            "Navigation system",
+            "Bluetooth",
+            "Remote start",
+            "Blind spot monitoring"
+          ]
+        },
+        "Gearshift": "Auto",
+        "Cost": "R780 000 000",
+        "Status": "In Production",
+        "Best Use": "Daily Transport"
+      }
+    }
+  }
+,
+{
+    "carDiv": {
+      "imgCars": {
+        "src": "images/included camera shot of batfleck mercedes f751f8c-mercedes-justiceleague-08.jpg"
+      },
+      "carDesc": {
+        "Car Brand": "<link>Mercedes-Benz</link>",
+        "Model": "The Batfleck",
+        "Year": 2041,
+        "Number of Seats": 2,
+        "Car Features": {
+          "carFeats": [
+            "Backup camera",
+            "Navigation system",
+            "Bluetooth",
+            "Remote start",
+            "Blind spot monitoring"
+          ]
+        },
+        "Gearshift": "Auto",
+        "Status": "In Production",
+        "Best Use": "Daily Transport",
+        "Cost": "R70 951 000"
+      }
+    }
+  }
+,
+{
+    "carDiv": {
+      "imgCars": {
+        "src": "images/Fast furious Letty Chevrolet.jpg"
+      },
+      "carDesc": {
+        "Car Brand": "<link>Chevrolet</link>",
+        "Model": "Letty",
+        "Year": 2017,
+        "Number of Seats": 2,
+        "Car Features": {
+          "carFeats": [
+            "Backup camera",
+            "Navigation system",
+            "Bluetooth",
+            "Remote start",
+            "Blind spot monitoring"
+          ]
+        },
+        "Gearshift": "Auto",
+        "Status": "In Production",
+        "Best Use": "Daily Transport",
+        "Cost": "R1 023 000"
+      }
+    }
+  }
+,
+{
+    "carDiv": {
+      "imgCars": {
+        "src": "images/Mercedes-Benz-G-Class-Right-Front-Three-Quarter-58261.jpg"
+      },
+      "carDesc": {
+        "Car Brand": "<link>Mercedes-Benz</link>",
+        "Model": "G 63 AMG",
+        "Year": 2018,
+        "Number of Seats": 4,
+        "Car Features": {
+          "carFeats": [
+            "Backup camera",
+            "Navigation system",
+            "Bluetooth",
+            "Remote start",
+            "Blind spot monitoring"
+          ]
+        },
+        "Gearshift": "Auto",
+        "Status": "In Production",
+        "Best Use": "Daily Transport",
+        "Cost": "R50 000 000"
+      }
+    }
+  }
+,
+{
+    "carDiv": {
+      "imgCars": {
+        "src": "images/westworldubercarvictor-martinez-veh-rideshare-frontperspective-v01-190208-vm.jpg"
+      },
+      "carDesc": {
+        "Car Brand": "<link>Delos</link>",
+        "Model": "LA 48 Rideshare",
+        "Year": 2308,
+        "Number of Seats": 9,
+        "Car Features": {
+          "carFeats": [
+            "Backup camera",
+            "Navigation system",
+            "Bluetooth",
+            "Remote start",
+            "Blind spot monitoring"
+          ]
+        },
+        "Gearshift": "Auto",
+        "Status": "In Production",
+        "Best Use": "Daily Transport",
+        "Cost": "R960 000 000"
+      }
+    }
+  }
+,
+]}
