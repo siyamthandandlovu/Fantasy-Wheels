@@ -1,0 +1,367 @@
+{
+    "cars": [
+        {
+            "car": {
+                "imgCars": {
+                    "src": "src/images/12-mercedes-benz-vehicles-concept-cars-vision-avtr-3400x1440.png"
+                },
+                "carDesc": {
+                    "Car Brand": "Mercedes-Benz",
+                    "Model": "VISION AVTR",
+                    "Year": 2122,
+                    "Number of Seats": 2,
+                    "Car Features": {
+                        "carFeats": [
+                            "Carbon Emission Free",
+                            "Organic Battery Technology",
+                            "Exceptional fast charging capability",
+                            "Intuitive control",
+                            "Bionic formal language"
+                        ]
+                    },
+                    "Gearshift": "Auto",
+                    "Status": "In Production",
+                    "Best Use": "Daily Transport",
+                    "Cost": "R67 089 000"
+                }
+            }
+        },
+        {
+            "car": {
+                "imgCars": {
+                    "src": "src/images/The Bumble Bee car.jpg"
+                },
+                "carDesc": {
+                    "Car Brand": "Chevrolet",
+                    "Model": "The Bumble",
+                    "Year": 2013,
+                    "Number of Seats": 4,
+                    "Car Features": {
+                        "carFeats": [
+                            "Car Communication",
+                            "Navigation system",
+                            "Bluetooth",
+                            "Remote start"
+                        ]
+                    },
+                    "Gearshift": "Auto",
+                    "Cost": "R1 697 600",
+                    "Status": "In Production",
+                    "Best Use": "Daily Transport"
+                }
+            }
+        },
+        {
+            "car": {
+                "imgCars": {
+                    "src": "src/images/Dumb and Dumber Car 1436991864-0876ea6aaed85d846d5f06daf1fb12af.jpg"
+                },
+                "carDesc": {
+                    "Car Brand": "Mutt Cuts",
+                    "Model": "Bambridge 68",
+                    "Year": 2308,
+                    "Number of Seats": 6,
+                    "Car Features": {
+                        "carFeats": [
+                            "Backup camera",
+                            "Navigation system",
+                            "Bluetooth",
+                            "Remote start",
+                            "Blind spot monitoring"
+                        ]
+                    },
+                    "Gearshift": "Auto",
+                    "Cost": "R780 000 000",
+                    "Status": "In Production",
+                    "Best Use": "Daily Transport"
+                }
+            }
+        },
+        {
+            "car": {
+                "imgCars": {
+                    "src": "src/images/Dumb and Dumber Car 1436991864-0876ea6aaed85d846d5f06daf1fb12af.jpg"
+                },
+                "carDesc": {
+                    "Car Brand": "Mutt Cuts",
+                    "Model": "Bambridge 68",
+                    "Year": 2308,
+                    "Number of Seats": 6,
+                    "Car Features": {
+                        "carFeats": [
+                            "Backup camera",
+                            "Navigation system",
+                            "Bluetooth",
+                            "Remote start",
+                            "Blind spot monitoring"
+                        ]
+                    },
+                    "Gearshift": "Auto",
+                    "Cost": "R780 000 000",
+                    "Status": "In Production",
+                    "Best Use": "Daily Transport"
+                }
+            }
+        },
+        {
+            "car": {
+                "imgCars": {
+                    "src": "src/images/westworld lux suv victor-martinez-veh-luxsuv-05-v3-190206-vm.jpg"
+                },
+                "carDesc": {
+                    "Car Brand": "Delos",
+                    "Model": "Bambridge 68",
+                    "Year": 2308,
+                    "Number of Seats": 6,
+                    "Car Features": {
+                        "carFeats": [
+                            "Backup camera",
+                            "Navigation system",
+                            "Bluetooth",
+                            "Remote start",
+                            "Blind spot monitoring"
+                        ]
+                    },
+                    "Gearshift": "Auto",
+                    "Cost": "R780 000 000",
+                    "Status": "In Production",
+                    "Best Use": "Daily Transport"
+                }
+            }
+        },
+        {
+            "car": {
+                "imgCars": {
+                    "src": "src/images/included camera shot of batfleck mercedes f751f8c-mercedes-justiceleague-08.jpg"
+                },
+                "carDesc": {
+                    "Car Brand": "Mercedes-Benz",
+                    "Model": "The Batfleck",
+                    "Year": 2041,
+                    "Number of Seats": 2,
+                    "Car Features": {
+                        "carFeats": [
+                            "Backup camera",
+                            "Navigation system",
+                            "Bluetooth",
+                            "Remote start",
+                            "Blind spot monitoring"
+                        ]
+                    },
+                    "Gearshift": "Auto",
+                    "Status": "In Production",
+                    "Best Use": "Daily Transport",
+                    "Cost": "R70 951 000"
+                }
+            }
+        },
+        {
+            "car": {
+                "imgCars": {
+                    "src": "src/images/Fast furious Letty Chevrolet.jpg"
+                },
+                "carDesc": {
+                    "Car Brand": "Chevrolet",
+                    "Model": "Letty",
+                    "Year": 2017,
+                    "Number of Seats": 2,
+                    "Car Features": {
+                        "carFeats": [
+                            "Backup camera",
+                            "Navigation system",
+                            "Bluetooth",
+                            "Remote start",
+                            "Blind spot monitoring"
+                        ]
+                    },
+                    "Gearshift": "Auto",
+                    "Status": "In Production",
+                    "Best Use": "Daily Transport",
+                    "Cost": "R1 023 000"
+                }
+            }
+        },
+        {
+            "car": {
+                "imgCars": {
+                    "src": "src/images/Mercedes-Benz-G-Class-Right-Front-Three-Quarter-58261.jpg"
+                },
+                "carDesc": {
+                    "Car Brand": "Mercedes-Benz",
+                    "Model": "G 63 AMG",
+                    "Year": 2018,
+                    "Number of Seats": 4,
+                    "Car Features": {
+                        "carFeats": [
+                            "Backup camera",
+                            "Navigation system",
+                            "Bluetooth",
+                            "Remote start",
+                            "Blind spot monitoring"
+                        ]
+                    },
+                    "Gearshift": "Auto",
+                    "Status": "In Production",
+                    "Best Use": "Daily Transport",
+                    "Cost": "R50 000 000"
+                }
+            }
+        },
+        {
+            "car": {
+                "imgCars": {
+                    "src": "src/images/westworldubercarvictor-martinez-veh-rideshare-frontperspective-v01-190208-vm.jpg"
+                },
+                "carDesc": {
+                    "Car Brand": "Delos",
+                    "Model": "LA 48 Rideshare",
+                    "Year": 2308,
+                    "Number of Seats": 9,
+                    "Car Features": {
+                        "carFeats": [
+                            "Backup camera",
+                            "Navigation system",
+                            "Bluetooth",
+                            "Remote start",
+                            "Blind spot monitoring"
+                        ]
+                    },
+                    "Gearshift": "Auto",
+                    "Status": "In Production",
+                    "Best Use": "Daily Transport",
+                    "Cost": "R960 000 000"
+                }
+            }
+        },
+        {
+            "car": {
+                "imgCars": {
+                    "src": "src/images/furious-charger.jpg"
+                },
+                "carDesc": {
+                    "Car Brand": "Chevrolet",
+                    "Model": "La Familia X",
+                    "Year": 2008,
+                    "Number of Seats": 2,
+                    "Car Features": {
+                        "carFeats": [
+                            "Backup camera",
+                            "Navigation system",
+                            "Bluetooth",
+                            "Remote start",
+                            "Blind spot monitoring"
+                        ]
+                    },
+                    "Gearshift": "Auto",
+                    "Status": "In Production",
+                    "Best Use": "Daily Transport",
+                    "Cost": "R50 000 000"
+                }
+            }
+        },
+        {
+            "car": {
+                "imgCars": {
+                    "src": "src/images/bmw-m4-speed-yellow-03.jpg"
+                },
+                "carDesc": {
+                    "Car Brand": "BMW",
+                    "Model": "M4",
+                    "Year": 2021,
+                    "Number of Seats": 4,
+                    "Car Features": {
+                        "carFeats": [
+                            "Backup camera",
+                            "Navigation system",
+                            "Bluetooth",
+                            "Remote start",
+                            "Blind spot monitoring"
+                        ]
+                    },
+                    "Gearshift": "Auto",
+                    "Status": "In Production",
+                    "Best Use": "Daily Transport",
+                    "Cost": "R1 273 400"
+                }
+            }
+        },
+        {
+            "car": {
+                "imgCars": {
+                    "src": "src/images/scooby doo van 2087aa40f93_hd_1972-z-movie-car-scooby-doo.jpg"
+                },
+                "carDesc": {
+                    "Car Brand": "Mystery Machine",
+                    "Model": "Scooby Van 2000",
+                    "Year": 2002,
+                    "Number of Seats": 6,
+                    "Car Features": {
+                        "carFeats": [
+                            "Backup camera",
+                            "Navigation system",
+                            "Bluetooth",
+                            "Remote start",
+                            "Blind spot monitoring"
+                        ]
+                    },
+                    "Gearshift": "Manual",
+                    "Status": "In Production",
+                    "Best Use": "Daily Transport",
+                    "Cost": "R1 000 000"
+                }
+            }
+        },
+        {
+            "car": {
+                "imgCars": {
+                    "src": "src/images/Bale mobile 1.jpg"
+                },
+                "carDesc": {
+                    "Car Brand": "Bruce Wayne Enterprises",
+                    "Model": "Dark Knight II",
+                    "Year": 2008,
+                    "Number of Seats": 2,
+                    "Car Features": {
+                        "carFeats": [
+                            "Backup camera",
+                            "Navigation system",
+                            "Bluetooth",
+                            "Remote start",
+                            "Blind spot monitoring"
+                        ]
+                    },
+                    "Gearshift": "Auto",
+                    "Status": "In Production",
+                    "Best Use": "Daily Transport",
+                    "Cost": "R50 000 000"
+                }
+            }
+        },
+        {
+            "car": {
+                "imgCars": {
+                    "src": "src/images/bmw_x3_2017_07.jpg"
+                },
+                "carDesc": {
+                    "Car Brand": "BMW",
+                    "Model": "X3 SUV",
+                    "Year": 2022,
+                    "Number of Seats": 4,
+                    "Car Features": {
+                        "carFeats": [
+                            "Backup camera",
+                            "Navigation system",
+                            "Bluetooth",
+                            "Remote start",
+                            "Blind spot monitoring"
+                        ]
+                    },
+                    "Gearshift": "Auto",
+                    "Status": "In Production",
+                    "Best Use": "Daily Transport",
+                    "Cost": "R1 000 000"
+                }
+            }
+        }
+    ]
+}
