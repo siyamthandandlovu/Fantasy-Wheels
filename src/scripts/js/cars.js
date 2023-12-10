@@ -285,7 +285,17 @@ jsonCars = [
 function createCard(carData) {
     // Create the card element
     const card = document.createElement('div');
-    card.classList.add('card');
+    //card.classList.add('card');
+    card.classList.add('col-sm-6');
+    card.classList.add('carCard');
+    card.classList.add('my-4');
+   // card.classList.add('card');
+
+
+   const cardInner = document.createElement('div');
+   cardInner.classList.add('card');
+   card.appendChild(cardInner);
+
 
     // Create the image element
     const image = document.createElement('img');
