@@ -330,27 +330,27 @@ function createCard(carData) {
 
     const carListItem1 = document.createElement('li');
     carListItem1.classList.add('list-group-item');
-    carListItem1.innerHTML = 'Status';
+    carListItem1.innerHTML = `Status : ${carData['Status']}`;
     const carListItem2 = document.createElement('li');
     carListItem2.classList.add('list-group-item');
-    carListItem2.innerHTML = 'Cost';
+    carListItem2.innerHTML = `Cost : ${carData['Cost']}`;
     const carListItem3 = document.createElement('li');
     carListItem3.classList.add('list-group-item');
-    carListItem3.innerHTML = 'Best Use';
+    carListItem3.innerHTML = `Year : ${carData['Year']}`;
 
 
     carDetailList.appendChild(carListItem1);
     carDetailList.appendChild(carListItem2);
     carDetailList.appendChild(carListItem3);
 
-    card.appendChild(carDetailList);
+    
 
 
 
     
     // Append the card body to the card
     card.appendChild(cardBody);
-
+card.appendChild(carDetailList);
 
     return card;
 }
@@ -390,3 +390,8 @@ jsonCars.forEach(carData => {
     console.log(`Best Use: ${bestUse}`);
     console.log(`Cost: ${cost}`);
 });
+
+function getCar(){
+var jsonRes;
+return jsonRes;
+}
