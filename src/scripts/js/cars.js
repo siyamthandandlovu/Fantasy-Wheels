@@ -289,13 +289,11 @@ function createCard(carData) {
     card.classList.add('col-sm-6');
     card.classList.add('carCard');
     card.classList.add('my-4');
-   // card.classList.add('card');
 
-
+   //Inner card div
    const cardInner = document.createElement('div');
    cardInner.classList.add('card');
    card.appendChild(cardInner);
-
 
     // Create the image element
     const image = document.createElement('img');
@@ -307,18 +305,28 @@ function createCard(carData) {
     const cardBody = document.createElement('div');
     cardBody.classList.add('card-body');
 
+    //Create Heading
+
+
     // Create the car brand and model text
-    const carText = document.createElement('p');
-    carText.classList.add('card-text');
-    carText.textContent = `${carData['Car Brand']} ${carData.Model}`;
-    cardBody.appendChild(carText);
+    const carHeading = document.createElement('h5');
+    carHeading.classList.add('card-title');
+    carHeading.textContent = `${carData['Car Brand']} ${carData.Model}`;
+    cardBody.appendChild(carHeading);
 
     // Create the brand text
     const brandText = document.createElement('p');
     brandText.classList.add('card-text');
     brandText.textContent = carData['Brand'];
+    brandText.textContent =  `Car Features: ${carData.carFeats.join(", ")}`
     cardBody.appendChild(brandText);
+   
 
+    //Care features list
+    const carDetailList = document.createElement('ul');
+    carDetailList.classList.add('list-group');
+    carDetailList.classList.add('list-group-flush');
+    
     // Append the card body to the card
     card.appendChild(cardBody);
 

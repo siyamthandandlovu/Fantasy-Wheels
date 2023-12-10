@@ -1,4 +1,4 @@
- <div class="col-sm-6 col-lg-12 carCard my-4 " name="carID2">
+        <div class="col-sm-6 col-lg-12 carCard my-4 " name="carID2">
             <div class="card">
                 <img src="src/images/12-mercedes-benz-vehicles-concept-cars-vision-avtr-3400x1440.png"
                     class="card-img-top" alt="...">
@@ -18,3 +18,25 @@
                 </div>
             </div>
         </div>
+
+
+
+
+        
+        "id": 1,
+        "src": "src/images/12-mercedes-benz-vehicles-concept-cars-vision-avtr-3400x1440.png",
+        "Car Brand": "Mercedes-Benz",
+        "Model": "VISION AVTR",
+        "Year": 2122,
+        "Number of Seats": 2,
+        "carFeats": [
+            "Carbon Emission Free",
+            "Organic Battery Technology",
+            "Exceptional fast charging capability",
+            "Intuitive control",
+            "Bionic formal language"
+        ],
+        "Gearshift": "Auto",
+        "Status": "In Production",
+        "Best Use": "Daily Transport",
+        "Cost": "R67 089 000"
