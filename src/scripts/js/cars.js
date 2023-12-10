@@ -349,7 +349,15 @@ function createCard(carData) {
     const btnPopupModal = document.createElement('button');
     btnPopupModal.classList.add('btn');
     //btnPopupModal.classList.add('btn-');
-    
+    btnPopupModal.title="See More";
+    btnPopupModal.name = carData.id;
+    btnPopupModal.onclick=(popupCarInfoModal(this.name));
+    //modalCarInfo
+    //data-bs-toggle="modal" data-bs-target="#exampleModal"
+   // btnPopupModal.data-bs-toggle='modal';
+   // btnPopupModal.data-bs-target='modalCarInfo';
+
+
 
     
     // Append the card body to the card
@@ -379,9 +387,9 @@ jsonCars.forEach(carData => {
 
 
 // Create a function to generate the Bootstrap modal
-function createModal(carData) {
+function popupCarInfoModal(carData) {
     // Create the modal element
-    const modal = document.createElement('div');
+    const modal = document.getElementById('modalCarInfo');
     modal.classList.add('modal');
   
     // Create the modal dialog element
