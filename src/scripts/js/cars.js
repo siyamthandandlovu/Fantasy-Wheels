@@ -331,9 +331,11 @@ function createCard(carData) {
     const carListItem1 = document.createElement('li');
     carListItem1.classList.add('list-group-item');
     carListItem1.innerHTML = `Status : ${carData['Status']}`;
+
     const carListItem2 = document.createElement('li');
     carListItem2.classList.add('list-group-item');
     carListItem2.innerHTML = `Cost : ${carData['Cost']}`;
+
     const carListItem3 = document.createElement('li');
     carListItem3.classList.add('list-group-item');
     carListItem3.innerHTML = `Year : ${carData['Year']}`;
@@ -343,14 +345,16 @@ function createCard(carData) {
     carDetailList.appendChild(carListItem2);
     carDetailList.appendChild(carListItem3);
 
+    //create button that will popup a bootstrap modal
+    const btnPopupModal = document.createElement('button');
+    btnPopupModal.classList.add('btn');
+    //btnPopupModal.classList.add('btn-');
     
-
-
 
     
     // Append the card body to the card
     card.appendChild(cardBody);
-card.appendChild(carDetailList);
+    card.appendChild(carDetailList);
 
     return card;
 }
@@ -363,6 +367,93 @@ jsonCars.forEach(carData => {
     const card = createCard(carData);
     divCarCards.appendChild(card);
 });
+
+
+
+
+
+
+
+
+
+
+
+// Create a function to generate the Bootstrap modal
+function createModal(carData) {
+    // Create the modal element
+    const modal = document.createElement('div');
+    modal.classList.add('modal');
+  
+    // Create the modal dialog element
+    const modalDialog = document.createElement('div');
+    modalDialog.classList.add('modal-dialog');
+    modal.appendChild(modalDialog);
+  
+    // Create the modal content element
+    const modalContent = document.createElement('div');
+    modalContent.classList.add('modal-content');
+    modalDialog.appendChild(modalContent);
+  
+    // Create the modal header
+    const modalHeader = document.createElement('div');
+    modalHeader.classList.add('modal-header');
+  
+    // Create the modal title
+    const modalTitle = document.createElement('h5');
+    modalTitle.classList.add('modal-title');
+    modalTitle.textContent = `${carData['Car Brand']} ${carData.Model}`;
+    modalHeader.appendChild(modalTitle);
+  
+    // Create the close button
+    const closeButton = document.createElement('button');
+    closeButton.classList.add('close');
+    closeButton.setAttribute('type', 'button');
+    closeButton.setAttribute('data-dismiss', 'modal');
+    closeButton.innerHTML = '&times;';
+    modalHeader.appendChild(closeButton);
+  
+    modalContent.appendChild(modalHeader);
+  
+    // Create the modal body
+    const modalBody = document.createElement('div');
+    modalBody.classList.add('modal-body');
+  
+    // Populate the modal body with the car data
+    Object.entries(carData).forEach(([key, value]) => {
+      const row = document.createElement('div');
+      row.classList.add('row');
+  
+      const label = document.createElement('div');
+      label.classList.add('col-4', 'font-weight-bold');
+      label.textContent = key;
+      row.appendChild(label);
+  
+      const content = document.createElement('div');
+      content.classList.add('col-8');
+      content.textContent = value;
+      row.appendChild(content);
+  
+      modalBody.appendChild(row);
+    });
+  
+    modalContent.appendChild(modalBody);
+  
+    return modal;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Iterate over each car data element
@@ -390,8 +481,3 @@ jsonCars.forEach(carData => {
     console.log(`Best Use: ${bestUse}`);
     console.log(`Cost: ${cost}`);
 });
-
-function getCar(){
-var jsonRes;
-return jsonRes;
-}
