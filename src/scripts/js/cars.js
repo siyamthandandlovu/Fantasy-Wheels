@@ -7,28 +7,26 @@ console.log('Welcome to Fantasy Wheels ^_^');
 
 jsonCars = [
     {
-      "id":1,
+        "id": 1,
         "src": "src/images/12-mercedes-benz-vehicles-concept-cars-vision-avtr-3400x1440.png",
         "Car Brand": "Mercedes-Benz",
         "Model": "VISION AVTR",
         "Year": 2122,
         "Number of Seats": 2,
-        "Car Features": {
-            "carFeats": [
-                "Carbon Emission Free",
-                "Organic Battery Technology",
-                "Exceptional fast charging capability",
-                "Intuitive control",
-                "Bionic formal language"
-            ]
-        },
+        "carFeats": [
+            "Carbon Emission Free",
+            "Organic Battery Technology",
+            "Exceptional fast charging capability",
+            "Intuitive control",
+            "Bionic formal language"
+        ],
         "Gearshift": "Auto",
         "Status": "In Production",
         "Best Use": "Daily Transport",
         "Cost": "R67 089 000"
     },
     {
-      "id":2,
+        "id": 2,
         "src": "src/images/The Bumble Bee car.jpg",
         "Car Brand": "Chevrolet",
         "Model": "The Bumble",
@@ -46,7 +44,7 @@ jsonCars = [
         "Best Use": "Daily Transport"
     },
     {
-      "id":3,
+        "id": 3,
         "src": "src/images/Dumb and Dumber Car 1436991864-0876ea6aaed85d846d5f06daf1fb12af.jpg",
         "Car Brand": "Mutt Cuts",
         "Model": "Bambridge 68",
@@ -65,7 +63,7 @@ jsonCars = [
         "Best Use": "Daily Transport"
     },
     {
-      "id":4,
+        "id": 4,
         "src": "src/images/Dumb and Dumber Car 1436991864-0876ea6aaed85d846d5f06daf1fb12af.jpg",
         "Car Brand": "Mutt Cuts",
         "Model": "Bambridge 68",
@@ -84,7 +82,7 @@ jsonCars = [
         "Best Use": "Daily Transport"
     },
     {
-      "id":5,
+        "id": 5,
         "src": "src/images/westworld lux suv victor-martinez-veh-luxsuv-05-v3-190206-vm.jpg",
         "Car Brand": "Delos",
         "Model": "Bambridge 68",
@@ -103,7 +101,7 @@ jsonCars = [
         "Best Use": "Daily Transport"
     },
     {
-      "id":6,
+        "id": 6,
         "src": "src/images/included camera shot of batfleck mercedes f751f8c-mercedes-justiceleague-08.jpg",
         "Car Brand": "Mercedes-Benz",
         "Model": "The Batfleck",
@@ -122,7 +120,7 @@ jsonCars = [
         "Cost": "R70 951 000"
     },
     {
-      "id":7,
+        "id": 7,
         "src": "src/images/Fast furious Letty Chevrolet.jpg",
         "Car Brand": "Chevrolet",
         "Model": "Letty",
@@ -141,7 +139,7 @@ jsonCars = [
         "Cost": "R1 023 000"
     },
     {
-      "id":8,
+        "id": 8,
         "src": "src/images/Mercedes-Benz-G-Class-Right-Front-Three-Quarter-58261.jpg",
         "Car Brand": "Mercedes-Benz",
         "Model": "G 63 AMG",
@@ -160,7 +158,7 @@ jsonCars = [
         "Cost": "R50 000 000"
     },
     {
-      "id":9,
+        "id": 9,
         "src": "src/images/westworldubercarvictor-martinez-veh-rideshare-frontperspective-v01-190208-vm.jpg",
         "Car Brand": "Delos",
         "Model": "LA 48 Rideshare",
@@ -179,7 +177,7 @@ jsonCars = [
         "Cost": "R960 000 000"
     },
     {
-      "id":10,
+        "id": 10,
         "src": "src/images/furious-charger.jpg",
         "Car Brand": "Chevrolet",
         "Model": "La Familia X",
@@ -198,7 +196,7 @@ jsonCars = [
         "Cost": "R50 000 000"
     },
     {
-      "id":11,
+        "id": 11,
         "src": "src/images/bmw-m4-speed-yellow-03.jpg",
         "Car Brand": "BMW",
         "Model": "M4",
@@ -217,7 +215,7 @@ jsonCars = [
         "Cost": "R1 273 400"
     },
     {
-      "id":12,
+        "id": 12,
         "src": "src/images/scooby doo van 2087aa40f93_hd_1972-z-movie-car-scooby-doo.jpg",
         "Car Brand": "Mystery Machine",
         "Model": "Scooby Van 2000",
@@ -236,7 +234,7 @@ jsonCars = [
         "Cost": "R1 000 000"
     },
     {
-      "id":13,
+        "id": 13,
         "src": "src/images/Bale mobile 1.jpg",
         "Car Brand": "Bruce Wayne Enterprises",
         "Model": "Dark Knight II",
@@ -255,7 +253,7 @@ jsonCars = [
         "Cost": "R50 000 000"
     },
     {
-      "id":14,
+        "id": 14,
         "src": "src/images/bmw_x3_2017_07.jpg",
         "Car Brand": "BMW",
         "Model": "X3 SUV",
@@ -273,6 +271,82 @@ jsonCars = [
         "Best Use": "Daily Transport",
         "Cost": "R1 000 000"
     }
-  ];
+];
 
-console.log(jsonCars);
+//console.log(jsonCars);
+
+//Start looping through jsonCars
+//create a boot strap modal with a button, 
+//where each button has a name with the same ID as the car
+
+// Assuming you have the JSON data stored in a variable called 'jsonData'
+
+// Create a function to generate the HTML for the Bootstrap card
+function createCard(carData) {
+    // Create the card element
+    const card = document.createElement('div');
+    card.classList.add('card');
+
+    // Create the image element
+    const image = document.createElement('img');
+    image.classList.add('card-img-top');
+    image.src = carData.src;
+    card.appendChild(image);
+
+    // Create the card body
+    const cardBody = document.createElement('div');
+    cardBody.classList.add('card-body');
+
+    // Create the car brand and model text
+    const carText = document.createElement('p');
+    carText.classList.add('card-text');
+    carText.textContent = `${carData['Car Brand']} ${carData.Model}`;
+    cardBody.appendChild(carText);
+
+    // Create the brand text
+    const brandText = document.createElement('p');
+    brandText.classList.add('card-text');
+    brandText.textContent = carData['Brand'];
+    cardBody.appendChild(brandText);
+
+    // Append the card body to the card
+    card.appendChild(cardBody);
+
+    return card;
+}
+
+// Assuming you have a container element with an id of 'divCarCards' where you want to append the cards
+const divCarCards = document.getElementById('divCarCards');
+
+// Iterate over each car data element and create a card for each one
+jsonCars.forEach(carData => {
+    const card = createCard(carData);
+    divCarCards.appendChild(card);
+});
+
+
+// Iterate over each car data element
+jsonCars.forEach(carData => {
+    const src = carData.src;
+    const carBrand = carData["Car Brand"];
+    const model = carData.Model;
+    const year = carData.Year;
+    const numberOfSeats = carData["Number of Seats"];
+    const carFeats = carData.carFeats;
+    const gearshift = carData.Gearshift;
+    const status = carData.Status;
+    const bestUse = carData["Best Use"];
+    const cost = carData.Cost;
+
+    // Do whatever you want with the extracted data
+    console.log(`Source: ${src}`);
+    console.log(`Car Brand: ${carBrand}`);
+    console.log(`Model: ${model}`);
+    console.log(`Year: ${year}`);
+    console.log(`Number of Seats: ${numberOfSeats}`);
+    console.log(`Car Features: ${carFeats.join(", ")}`);
+    console.log(`Gearshift: ${gearshift}`);
+    console.log(`Status: ${status}`);
+    console.log(`Best Use: ${bestUse}`);
+    console.log(`Cost: ${cost}`);
+});
