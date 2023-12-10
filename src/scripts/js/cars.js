@@ -322,13 +322,35 @@ function createCard(carData) {
     cardBody.appendChild(brandText);
    
 
-    //Care features list
+    //Car features list
     const carDetailList = document.createElement('ul');
     carDetailList.classList.add('list-group');
     carDetailList.classList.add('list-group-flush');
+
+
+    const carListItem1 = document.createElement('li');
+    carListItem1.classList.add('list-group-item');
+    carListItem1.innerHTML = 'Status';
+    const carListItem2 = document.createElement('li');
+    carListItem2.classList.add('list-group-item');
+    carListItem2.innerHTML = 'Cost';
+    const carListItem3 = document.createElement('li');
+    carListItem3.classList.add('list-group-item');
+    carListItem3.innerHTML = 'Best Use';
+
+
+    carDetailList.appendChild(carListItem1);
+    carDetailList.appendChild(carListItem2);
+    carDetailList.appendChild(carListItem3);
+
+    card.appendChild(carDetailList);
+
+
+
     
     // Append the card body to the card
     card.appendChild(cardBody);
+
 
     return card;
 }
