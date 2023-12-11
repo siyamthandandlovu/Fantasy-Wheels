@@ -403,15 +403,22 @@ jsonCars.forEach(carData => {
 // Create a function to generate the Bootstrap modal
 function popupCarInfoModal(carID) {
     // Get the modal element
-    console.log('carID: ' , carID);
-    console.log('Bey');
+    console.log('Loading Car Info: ' , carID);
+
+    //get correct car info from jsonCars array
+    const carData = jsonCars.find((car) => car.id == carID);
+    console.log(carData);
+    if (carData) {
+        console.log("Car data found:", carData);
+      } else {
+        console.log("Car data not found for the specified carID");
+      }
 
     const modal = document.getElementById('modalCarInfo');
     modal.classList.add('modal');
 
 
-    /* 
-       // Create the modal content element
+   // Create the modal content element
        const modalContent = document.createElement('div');
        modalContent.classList.add('modal-content');
    
@@ -454,9 +461,11 @@ function popupCarInfoModal(carID) {
            row.appendChild(content);
    
            modalBody.appendChild(row);
-       }); */
+       }); 
 
-    // modalContent.appendChild(modalBody);
+     modalContent.appendChild(modalBody);
+     modal.innerHTML="";
+     modal.appendChild(modalContent);
 
  //   return modal;
 }
