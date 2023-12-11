@@ -286,7 +286,7 @@ function createCard(carData) {
     // Create the card element
     const card = document.createElement('div');
     //card.classList.add('card');
-    card.classList.add('col-sm-6' , 'carCard' , 'my-4');
+    card.classList.add('col-sm-6', 'carCard', 'my-4');
 
 
     //Inner card div
@@ -323,8 +323,7 @@ function createCard(carData) {
 
     //Car features list
     const carDetailList = document.createElement('ul');
-    carDetailList.classList.add('list-group');
-    carDetailList.classList.add('list-group-flush');
+    carDetailList.classList.add('list-group','list-group-flush');
 
 
     const carListItem1 = document.createElement('li');
@@ -346,7 +345,7 @@ function createCard(carData) {
 
     //create button that will popup a bootstrap modal
     const btnPopupModal = document.createElement('button');
-    btnPopupModal.classList.add('btn' , 'btn-dark','ms-3');
+    btnPopupModal.classList.add('btn', 'btn-dark', 'ms-3');
     //btnPopupModal.classList.add('btn-');
     btnPopupModal.title = "See More";
     btnPopupModal.innerHTML = "See More";
@@ -361,15 +360,15 @@ function createCard(carData) {
     // btnPopupModal.data-bs-target='modalCarInfo';
 
     //console.log(btnPopupModal.onclick);
-//cardBody.appendChild(btnPopupModal);
+    //cardBody.appendChild(btnPopupModal);
 
     // Append the card body to the card
     cardBody.appendChild(carDetailList);
     cardBody.appendChild(btnPopupModal);
     //cardInner.appendChild(carDetailList);
-      
+
     cardInner.appendChild(cardBody);
-    cardInner.style="position: absolute; left: 0%; top: 0px;"
+    //card.style="position: absolute; left: 0%; top: 0px;"
     //cardInner.appendChild(btnPopupModal);
 
 
@@ -377,7 +376,7 @@ function createCard(carData) {
     card.appendChild(cardInner);
 
     //style of card
-   // style="position: absolute; left: 0%; top: 0px;"
+    // style="position: absolute; left: 0%; top: 0px;"
     return card;
 }
 
@@ -407,53 +406,53 @@ function popupCarInfoModal(carID) {
     modal.classList.add('modal');
 
 
- /* 
-    // Create the modal content element
-    const modalContent = document.createElement('div');
-    modalContent.classList.add('modal-content');
+    /* 
+       // Create the modal content element
+       const modalContent = document.createElement('div');
+       modalContent.classList.add('modal-content');
+   
+       // Create the modal header
+       const modalHeader = document.createElement('div');
+       modalHeader.classList.add('modal-header');
+      // Create the modal title
+       const modalTitle = document.createElement('h5');
+       modalTitle.classList.add('modal-title');
+       modalTitle.textContent = `${carData['Car Brand']} ${carData.Model}`;
+       modalHeader.appendChild(modalTitle);
+   
+       // Create the close button
+       const closeButton = document.createElement('button');
+       closeButton.classList.add('close');
+       closeButton.setAttribute('type', 'button');
+       closeButton.setAttribute('data-dismiss', 'modal');
+       closeButton.innerHTML = '&times;';
+       modalHeader.appendChild(closeButton);
+   
+       modalContent.appendChild(modalHeader);
+   
+       // Create the modal body
+       const modalBody = document.createElement('div');
+       modalBody.classList.add('modal-body');
+   
+       // Populate the modal body with the car data
+       Object.entries(carData).forEach(([key, value]) => {
+           const row = document.createElement('div');
+           row.classList.add('row');
+   
+           const label = document.createElement('div');
+           label.classList.add('col-4', 'font-weight-bold');
+           label.textContent = key;
+           row.appendChild(label);
+   
+           const content = document.createElement('div');
+           content.classList.add('col-8');
+           content.textContent = value;
+           row.appendChild(content);
+   
+           modalBody.appendChild(row);
+       }); */
 
-    // Create the modal header
-    const modalHeader = document.createElement('div');
-    modalHeader.classList.add('modal-header');
-   // Create the modal title
-    const modalTitle = document.createElement('h5');
-    modalTitle.classList.add('modal-title');
-    modalTitle.textContent = `${carData['Car Brand']} ${carData.Model}`;
-    modalHeader.appendChild(modalTitle);
-
-    // Create the close button
-    const closeButton = document.createElement('button');
-    closeButton.classList.add('close');
-    closeButton.setAttribute('type', 'button');
-    closeButton.setAttribute('data-dismiss', 'modal');
-    closeButton.innerHTML = '&times;';
-    modalHeader.appendChild(closeButton);
-
-    modalContent.appendChild(modalHeader);
-
-    // Create the modal body
-    const modalBody = document.createElement('div');
-    modalBody.classList.add('modal-body');
-
-    // Populate the modal body with the car data
-    Object.entries(carData).forEach(([key, value]) => {
-        const row = document.createElement('div');
-        row.classList.add('row');
-
-        const label = document.createElement('div');
-        label.classList.add('col-4', 'font-weight-bold');
-        label.textContent = key;
-        row.appendChild(label);
-
-        const content = document.createElement('div');
-        content.classList.add('col-8');
-        content.textContent = value;
-        row.appendChild(content);
-
-        modalBody.appendChild(row);
-    }); */
-
-   // modalContent.appendChild(modalBody);
+    // modalContent.appendChild(modalBody);
 
     return modal;
 }
@@ -487,14 +486,14 @@ jsonCars.forEach(carData => {
     const cost = carData.Cost;
 
     // Do whatever you want with the extracted data
-/*     console.log(`Source: ${src}`);
-    console.log(`Car Brand: ${carBrand}`);
-    console.log(`Model: ${model}`);
-    console.log(`Year: ${year}`);
-    console.log(`Number of Seats: ${numberOfSeats}`);
-    console.log(`Car Features: ${carFeats.join(", ")}`);
-    console.log(`Gearshift: ${gearshift}`);
-    console.log(`Status: ${status}`);
-    console.log(`Best Use: ${bestUse}`);
-    console.log(`Cost: ${cost}`); */
+    /*     console.log(`Source: ${src}`);
+        console.log(`Car Brand: ${carBrand}`);
+        console.log(`Model: ${model}`);
+        console.log(`Year: ${year}`);
+        console.log(`Number of Seats: ${numberOfSeats}`);
+        console.log(`Car Features: ${carFeats.join(", ")}`);
+        console.log(`Gearshift: ${gearshift}`);
+        console.log(`Status: ${status}`);
+        console.log(`Best Use: ${bestUse}`);
+        console.log(`Cost: ${cost}`); */
 });
