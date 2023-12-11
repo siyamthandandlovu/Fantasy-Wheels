@@ -290,10 +290,10 @@ function createCard(carData) {
     card.classList.add('carCard');
     card.classList.add('my-4');
 
-   //Inner card div
-   const cardInner = document.createElement('div');
-   cardInner.classList.add('card');
-   card.appendChild(cardInner);
+    //Inner card div
+    const cardInner = document.createElement('div');
+    cardInner.classList.add('card');
+    card.appendChild(cardInner);
 
     // Create the image element
     const image = document.createElement('img');
@@ -318,9 +318,9 @@ function createCard(carData) {
     const brandText = document.createElement('p');
     brandText.classList.add('card-text');
     brandText.textContent = carData['Brand'];
-    brandText.textContent =  `Car Features: ${carData.carFeats.join(", ")}`
+    brandText.textContent = `Car Features: ${carData.carFeats.join(", ")}`
     cardBody.appendChild(brandText);
-   
+
 
     //Car features list
     const carDetailList = document.createElement('ul');
@@ -347,22 +347,26 @@ function createCard(carData) {
 
     //create button that will popup a bootstrap modal
     const btnPopupModal = document.createElement('button');
-    btnPopupModal.classList.add('btn');
+    btnPopupModal.classList.add('btn' , 'btn-dark');
     //btnPopupModal.classList.add('btn-');
-    btnPopupModal.title="See More";
-    btnPopupModal.name = carData.id;
-    btnPopupModal.onclick=(popupCarInfoModal(this.name));
+    btnPopupModal.title = "See More";
+    btnPopupModal.innerHTML = "See More";
+    btnPopupModal.name = carData['id'];
+    btnPopupModal.onclick = (popupCarInfoModal(this.name));
     //modalCarInfo
     //data-bs-toggle="modal" data-bs-target="#exampleModal"
-   // btnPopupModal.data-bs-toggle='modal';
-   // btnPopupModal.data-bs-target='modalCarInfo';
+    // btnPopupModal.data-bs-toggle='modal';
+    // btnPopupModal.data-bs-target='modalCarInfo';
 
 
+//cardBody.appendChild(btnPopupModal);
 
-    
     // Append the card body to the card
     card.appendChild(cardBody);
     card.appendChild(carDetailList);
+    card.appendChild(btnPopupModal);
+
+
 
     return card;
 }
@@ -391,27 +395,27 @@ function popupCarInfoModal(carData) {
     // Create the modal element
     const modal = document.getElementById('modalCarInfo');
     modal.classList.add('modal');
-  
+
     // Create the modal dialog element
     const modalDialog = document.createElement('div');
     modalDialog.classList.add('modal-dialog');
     modal.appendChild(modalDialog);
-  
+
     // Create the modal content element
     const modalContent = document.createElement('div');
     modalContent.classList.add('modal-content');
     modalDialog.appendChild(modalContent);
-  
+
     // Create the modal header
     const modalHeader = document.createElement('div');
     modalHeader.classList.add('modal-header');
-  
+
     // Create the modal title
     const modalTitle = document.createElement('h5');
     modalTitle.classList.add('modal-title');
     modalTitle.textContent = `${carData['Car Brand']} ${carData.Model}`;
     modalHeader.appendChild(modalTitle);
-  
+
     // Create the close button
     const closeButton = document.createElement('button');
     closeButton.classList.add('close');
@@ -419,35 +423,35 @@ function popupCarInfoModal(carData) {
     closeButton.setAttribute('data-dismiss', 'modal');
     closeButton.innerHTML = '&times;';
     modalHeader.appendChild(closeButton);
-  
+
     modalContent.appendChild(modalHeader);
-  
+
     // Create the modal body
     const modalBody = document.createElement('div');
     modalBody.classList.add('modal-body');
-  
+
     // Populate the modal body with the car data
     Object.entries(carData).forEach(([key, value]) => {
-      const row = document.createElement('div');
-      row.classList.add('row');
-  
-      const label = document.createElement('div');
-      label.classList.add('col-4', 'font-weight-bold');
-      label.textContent = key;
-      row.appendChild(label);
-  
-      const content = document.createElement('div');
-      content.classList.add('col-8');
-      content.textContent = value;
-      row.appendChild(content);
-  
-      modalBody.appendChild(row);
+        const row = document.createElement('div');
+        row.classList.add('row');
+
+        const label = document.createElement('div');
+        label.classList.add('col-4', 'font-weight-bold');
+        label.textContent = key;
+        row.appendChild(label);
+
+        const content = document.createElement('div');
+        content.classList.add('col-8');
+        content.textContent = value;
+        row.appendChild(content);
+
+        modalBody.appendChild(row);
     });
-  
+
     modalContent.appendChild(modalBody);
-  
+
     return modal;
-  }
+}
 
 
 
