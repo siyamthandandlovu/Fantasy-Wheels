@@ -352,13 +352,16 @@ function createCard(carData) {
     btnPopupModal.title = "See More";
     btnPopupModal.innerHTML = "See More";
     btnPopupModal.name = carData['id'];
+    btnPopupModal.dataset.bsToggle = 'modal';
+    btnPopupModal.dataset.bsTarget = '#modalCarInfo';
+
     btnPopupModal.onclick = (popupCarInfoModal(this.name));
     //modalCarInfo
     //data-bs-toggle="modal" data-bs-target="#exampleModal"
     // btnPopupModal.data-bs-toggle='modal';
     // btnPopupModal.data-bs-target='modalCarInfo';
 
-
+    //console.log(btnPopupModal.onclick);
 //cardBody.appendChild(btnPopupModal);
 
     // Append the card body to the card
@@ -391,26 +394,21 @@ jsonCars.forEach(carData => {
 
 
 // Create a function to generate the Bootstrap modal
-function popupCarInfoModal(carData) {
-    // Create the modal element
+function popupCarInfoModal(carID) {
+    // Get the modal element
     const modal = document.getElementById('modalCarInfo');
     modal.classList.add('modal');
 
-    // Create the modal dialog element
-    const modalDialog = document.createElement('div');
-    modalDialog.classList.add('modal-dialog');
-    modal.appendChild(modalDialog);
 
+ /* 
     // Create the modal content element
     const modalContent = document.createElement('div');
     modalContent.classList.add('modal-content');
-    modalDialog.appendChild(modalContent);
 
     // Create the modal header
     const modalHeader = document.createElement('div');
     modalHeader.classList.add('modal-header');
-
-    // Create the modal title
+   // Create the modal title
     const modalTitle = document.createElement('h5');
     modalTitle.classList.add('modal-title');
     modalTitle.textContent = `${carData['Car Brand']} ${carData.Model}`;
@@ -446,9 +444,9 @@ function popupCarInfoModal(carData) {
         row.appendChild(content);
 
         modalBody.appendChild(row);
-    });
+    }); */
 
-    modalContent.appendChild(modalBody);
+   // modalContent.appendChild(modalBody);
 
     return modal;
 }
@@ -482,7 +480,7 @@ jsonCars.forEach(carData => {
     const cost = carData.Cost;
 
     // Do whatever you want with the extracted data
-    console.log(`Source: ${src}`);
+/*     console.log(`Source: ${src}`);
     console.log(`Car Brand: ${carBrand}`);
     console.log(`Model: ${model}`);
     console.log(`Year: ${year}`);
@@ -491,5 +489,5 @@ jsonCars.forEach(carData => {
     console.log(`Gearshift: ${gearshift}`);
     console.log(`Status: ${status}`);
     console.log(`Best Use: ${bestUse}`);
-    console.log(`Cost: ${cost}`);
+    console.log(`Cost: ${cost}`); */
 });
