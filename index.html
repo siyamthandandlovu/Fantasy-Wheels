@@ -20,42 +20,65 @@
 </head>
 
 <body>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 b">
+
+            <div class="align-content-sm-center"><img src="src/images/HorizontalLogoPurple.png" class="imgHeadLogo" style="width: 20%;"></div>
+            <h1 class="text-center">FANTASY WHEELS</h1>
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+            </ul>
+
+            <h5 class="text-center">Fantasy Wheels is a collection of cars from all of our favourite movies and television series. Happy browsing!</h5>
+
+        </header>
+    </div>
 
     <div class="divBody">
 
-        <div class="divLogoHead position-relative px-2 py-5">
-            <img src="src/images/HorizontalLogoPurple.png" class="imgHeadLogo  position-absolute start-50 translate-middle" style="width: 40%;">
-            <h1 class="pageTitles position-absolute top-0 start-50 translate-middle">Car Gallery</h1>
+        <div class="divLogoHead position-fixed px-2 py-5">
+            <div>
+                <img src="src/images/HorizontalLogoPurple.png"
+                    class="imgHeadLogo position-absolute start-50 translate-middle" style="width: 20%;">
+            </div>
+            <br>
 
         </div>
 
 
-
+        <div>
+            <h1 class="pageTitles  start-50 translate-middle">Car Gallery</h1>
+        </div>
 
         <div id="divCarCards" class="row px-3">
 
-            
 
 
-        <!-- car Info Modal -->
-        <div class="modal fade" id="modalCarInfo" tabindex="-1" aria-labelledby="modalCarInfoLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="modalCarInfoLabel">Modal title</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+
+            <!-- car Info Modal -->
+            <div class="modal fade" id="modalCarInfo" tabindex="-1" aria-labelledby="modalCarInfoLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="modalCarInfoLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--End of car Info Modal -->
+            <!--End of car Info Modal -->
 
 
 
@@ -74,11 +97,11 @@
 
 
 
-        <script src="./src/scripts/js/cars.js"></script>
+            <script src="./src/scripts/js/cars.js"></script>
 
 
 
-        <!-- pop a modal, ask them to donate to you-->
+            <!-- pop a modal, ask them to donate to you-->
 
 
 
@@ -86,7 +109,7 @@
 
 
 
-        <!-- 
+            <!-- 
 
 
 <div class="footer-bottom-area bg-dark p-3 ">
@@ -163,11 +186,11 @@
 
 
 
-        <footer class="pt-3 mt-4 text-muted border-top">
-            © 2021
-        </footer>
+            <footer class="pt-3 mt-4 text-muted border-top">
+                <a>About</a>
+            </footer>
 
-    </div>
+        </div>
 </body>
 
 </html>
