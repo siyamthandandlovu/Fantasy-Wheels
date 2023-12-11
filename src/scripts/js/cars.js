@@ -286,20 +286,19 @@ function createCard(carData) {
     // Create the card element
     const card = document.createElement('div');
     //card.classList.add('card');
-    card.classList.add('col-sm-6');
-    card.classList.add('carCard');
-    card.classList.add('my-4');
+    card.classList.add('col-sm-6' , 'carCard' , 'my-4');
+
 
     //Inner card div
     const cardInner = document.createElement('div');
     cardInner.classList.add('card');
-    card.appendChild(cardInner);
+
 
     // Create the image element
     const image = document.createElement('img');
     image.classList.add('card-img-top');
     image.src = carData.src;
-    card.appendChild(image);
+    cardInner.appendChild(image);
 
     // Create the card body
     const cardBody = document.createElement('div');
@@ -365,12 +364,13 @@ function createCard(carData) {
 //cardBody.appendChild(btnPopupModal);
 
     // Append the card body to the card
-    card.appendChild(cardBody);
-    card.appendChild(carDetailList);
-    card.appendChild(btnPopupModal);
+    cardInner.appendChild(cardBody);
+    cardInner.appendChild(carDetailList);
+    cardInner.appendChild(btnPopupModal);
 
 
 
+    card.appendChild(cardInner);
     return card;
 }
 
