@@ -346,7 +346,7 @@ function createCard(carData) {
 
     //create button that will popup a bootstrap modal
     const btnPopupModal = document.createElement('button');
-    btnPopupModal.classList.add('btn' , 'btn-dark');
+    btnPopupModal.classList.add('btn' , 'btn-dark','ms-3');
     //btnPopupModal.classList.add('btn-');
     btnPopupModal.title = "See More";
     btnPopupModal.innerHTML = "See More";
@@ -364,9 +364,12 @@ function createCard(carData) {
 //cardBody.appendChild(btnPopupModal);
 
     // Append the card body to the card
+    cardBody.appendChild(carDetailList);
+    cardBody.appendChild(btnPopupModal);
+    //cardInner.appendChild(carDetailList);
+      
     cardInner.appendChild(cardBody);
-    cardInner.appendChild(carDetailList);
-    cardInner.appendChild(btnPopupModal);
+    //cardInner.appendChild(btnPopupModal);
 
 
 
