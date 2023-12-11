@@ -369,11 +369,15 @@ function createCard(carData) {
     //cardInner.appendChild(carDetailList);
       
     cardInner.appendChild(cardBody);
+    cardInner.style="position: absolute; left: 0%; top: 0px;"
     //cardInner.appendChild(btnPopupModal);
 
 
 
     card.appendChild(cardInner);
+
+    //style of card
+   // style="position: absolute; left: 0%; top: 0px;"
     return card;
 }
 
