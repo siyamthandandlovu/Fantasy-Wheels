@@ -1,2 +1,2 @@
 # Fantasy-Wheels
-Fantasy wheels is a website that can be used to browse everyone's favourite wheels from all corners of fiction
+Fantasy Wheels is a website where you can explore a wide variety of fictional wheels from various realms of imagination.
