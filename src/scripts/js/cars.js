@@ -286,7 +286,7 @@ function createCard(carData) {
     // Create the card element
     const card = document.createElement('div');
     //card.classList.add('card');
-    card.classList.add('col-sm-6', 'carCard', 'my-4');
+    card.classList.add('col-sm-6', 'carCard', 'my-4','card-container');
 
 
     //Inner card div
