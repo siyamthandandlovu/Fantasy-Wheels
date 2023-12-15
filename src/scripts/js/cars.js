@@ -483,9 +483,9 @@ function popupCarInfoModal(carID) {
         modalBody.appendChild(row);
     }); */
 
-    const rowContent = createModalContent(carData);
+    const carContent = createModalContent(carData);
 
-    modalBody.appendChild(rowContent);
+    modalBody.appendChild(carContent);
 
     modalContent.appendChild(modalBody);
     modal.innerHTML = "";
@@ -495,7 +495,7 @@ function popupCarInfoModal(carID) {
 }
 
 
-
+//Generates a display of the car json object passed in
 function createModalContent(jsonData) {
     const rowContent = document.createElement('div');
     rowContent.classList.add('row');
