@@ -352,6 +352,7 @@ function createCard(carData) {
     btnPopupModal.name = carData['id'];
     btnPopupModal.dataset.bsToggle = 'modal';
     btnPopupModal.dataset.bsTarget = '#modalCarInfo';
+    
 
     // btnPopupModal.onclick = (popupCarInfoModal(this.name));
     btnPopupModal.onclick = function () { popupCarInfoModal(this.name) }
@@ -452,7 +453,12 @@ function popupCarInfoModal(carID) {
     modalImage.src = carData['src'];
     modalBody.appendChild(modalImage);
 
+    //create close button
+     //<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
+
+    const btnCloseButton = document.createElement('button');
+    btnCloseButton.classList.add('')
     //<img class="card-img-top" src="src/images/Mercedes-Benz-G-Class-Right-Front-Three-Quarter-58261.jpg"></img>
 
     // Populate the modal body with the car data
@@ -474,7 +480,9 @@ function popupCarInfoModal(carID) {
     }); */
 
     const rowContent = createModalContent(carData);
+
     modalBody.appendChild(rowContent);
+
     modalContent.appendChild(modalBody);
     modal.innerHTML = "";
     modal.appendChild(modalContent);
