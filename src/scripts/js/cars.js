@@ -486,19 +486,26 @@ function popupCarInfoModal(carID) {
     modalBody.appendChild(btnCloseButton);
 
     modalContent.appendChild(modalBody);
+
+    //Creating Modal from scratch
+    
+   // div class="modal-dialog
+    const modalDialog = document.createElement('div');
+    modalDialog.classList.add('modal-dialog')
+    //modal now contains no data
     modal.innerHTML = "";
     modal.appendChild(modalContent);
 
-    //   return modal;
+
 }
 
 
 //Generates a display of the car json object passed in
 function createModalContent(jsonData) {
+
+    // Create a div element    
     const rowContent = document.createElement('div');
     rowContent.classList.add('row');
-
-    // Create a div element
 
     // Create an image element and set the src attribute
     const imageElement = document.createElement('img');
