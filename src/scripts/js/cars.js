@@ -1,9 +1,4 @@
-
 console.log('Welcome to Fantasy Wheels ^_^');
-//get json file in question
-//import jsonCars from '../../json/cars.json';
-//const jsonCars = JSON.parse(require('fs').readFileSync('../../json/cars.json', 'utf8'));
-
 
 jsonCars = [
     {
@@ -304,7 +299,6 @@ function createCard(carData) {
     const cardBody = document.createElement('div');
     cardBody.classList.add('card-body');
 
-    //Create Heading
 
 
     // Create the car brand and model text
@@ -401,7 +395,7 @@ jsonCars.forEach(carData => {
 
 
 
-// Create a function to generate the Bootstrap modal
+// Finds bootstrap modal and attaches car info to it
 function popupCarInfoModal(carID) {
     // Get the modal element
     console.log('Loading Car Info: ', carID);
@@ -421,7 +415,7 @@ function popupCarInfoModal(carID) {
 
     // Create the modal content element
     const modalContent = document.createElement('div');
-    modalContent.classList.add('modal-content');
+    modalContent.classList.add('modal-content','px-4');
 
     // Create the modal header
     const modalHeader = document.createElement('div');
@@ -583,13 +577,4 @@ function createModalContent(jsonData) {
 
     return rowContent;
 }
-
-
-
-
-
-
-
-
-
 
