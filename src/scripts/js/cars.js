@@ -566,31 +566,3 @@ function createModalContent(jsonData) {
 
 
 
-
-/* 
-// Iterate over each car data element
-jsonCars.forEach(carData => {
-    const src = carData.src;
-    const carBrand = carData["Car Brand"];
-    const model = carData.Model;
-    const year = carData.Year;
-    const numberOfSeats = carData["Number of Seats"];
-    const carFeats = carData.carFeats;
-    const gearshift = carData.Gearshift;
-    const status = carData.Status;
-    const bestUse = carData["Best Use"];
-    const cost = carData.Cost;
-
-    // Do whatever you want with the extracted data
-       console.log(`Source: ${src}`);
-        console.log(`Car Brand: ${carBrand}`);
-        console.log(`Model: ${model}`);
-        console.log(`Year: ${year}`);
-        console.log(`Number of Seats: ${numberOfSeats}`);
-        console.log(`Car Features: ${carFeats.join(", ")}`);
-        console.log(`Gearshift: ${gearshift}`);
-        console.log(`Status: ${status}`);
-        console.log(`Best Use: ${bestUse}`);
-        console.log(`Cost: ${cost}`); 
-});
- */
