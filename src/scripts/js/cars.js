@@ -453,10 +453,7 @@ function popupCarInfoModal(carID) {
     modalImage.src = carData['src'];
     modalBody.appendChild(modalImage);
 
-    //create close button
-     //<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
-
+    //Create close button (bottom)
     const btnCloseButton = document.createElement('button');
     btnCloseButton.classList.add('btn','btn-dark');
     btnCloseButton.setAttribute('type', 'button');
@@ -485,7 +482,6 @@ function popupCarInfoModal(carID) {
 
     const carContent = createModalContent(carData);
     
-
     modalBody.appendChild(carContent);
     modalBody.appendChild(btnCloseButton);
 
