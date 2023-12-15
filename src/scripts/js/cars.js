@@ -491,7 +491,12 @@ function popupCarInfoModal(carID) {
     
    // div class="modal-dialog
     const modalDialog = document.createElement('div');
-    modalDialog.classList.add('modal-dialog')
+    modalDialog.classList.add('modal-dialog');
+
+    //div class="modal-content"
+    const modalCont = document.createElement('div');
+    modalCont.classList.add('modal-content');
+    
     //modal now contains no data
     modal.innerHTML = "";
     modal.appendChild(modalContent);
