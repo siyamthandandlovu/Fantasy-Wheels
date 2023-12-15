@@ -484,6 +484,7 @@ function popupCarInfoModal(carID) {
     }); */
 
     const carContent = createModalContent(carData);
+    
 
     modalBody.appendChild(carContent);
 
