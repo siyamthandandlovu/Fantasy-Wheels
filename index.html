@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.9">
 
     <title>Fantasy Wheels</title>
-    <meta http-equiv="refresh" content="20">
+    <meta http-equiv="refresh" content="5">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -19,6 +19,11 @@
     <!--Adding the Bootstrap 5-->
 
     <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        /*Hide horizontal scroll bar*/
         .card-container {
             display: flex;
             flex-wrap: wrap;
@@ -29,12 +34,12 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 container">
 
-            <div class="justify-content-center align-items-center position-relative">
-                <img src="src/images/HorizontalLogoPurple.png" class="position-absolute start-50" style="width: 20%; ">
-            </div>
+    <div class="">
+        <header class=" flex-wrap justify-content-center py-3 mb-4 ">
+            <img class="mx-auto d-block img-fluid " src="src/images/HorizontalLogoPurple.png" class=" start-50 my-6"
+                style="width: 14%;">
+
             <h1 class="text-center">FANTASY WHEELS</h1>
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="#" class="nav-link px-2 link-dark">Home</a></li>
@@ -42,7 +47,7 @@
                 <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
             </ul>
 
-            <h4 class="text-center">Fantasy Wheels is a collection of cars from all of our favourite movies and
+            <h4 class="text-center mx-5">Fantasy Wheels is a collection of cars from all of our favourite movies and
                 television series.<br> Happy browsing!</h4>
 
         </header>
@@ -61,7 +66,7 @@
 
 
         <div>
-            <h1 class="pageTitles  start-50 translate-middle">Car Gallery</h1>
+            <h1 class="pageTitles start-50 translate-middle">Car Gallery</h1>
         </div>
 
         <div id="divCarCards" class="row px-3">
@@ -88,21 +93,6 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
