@@ -449,7 +449,7 @@ function popupCarInfoModal(carID) {
 
     //Create close button (bottom)
     const btnCloseButton = document.createElement('button');
-    btnCloseButton.classList.add('btn','btn-dark');
+    btnCloseButton.classList.add('btn','btn-dark','mt-2');
     btnCloseButton.setAttribute('type', 'button');
     btnCloseButton.setAttribute('data-bs-dismiss', 'modal');
     btnCloseButton.innerHTML='Close';
