@@ -461,7 +461,7 @@ function popupCarInfoModal(carID) {
     btnCloseButton.classList.add('btn','btn-dark');
     btnCloseButton.setAttribute('type', 'button');
     btnCloseButton.setAttribute('data-bs-dismiss', 'modal');
-    btnCloseButton.setAttribute('innerHTML','Close');
+    btnCloseButton.innerHTML='Close';
 
     //<img class="card-img-top" src="src/images/Mercedes-Benz-G-Class-Right-Front-Three-Quarter-58261.jpg"></img>
 
