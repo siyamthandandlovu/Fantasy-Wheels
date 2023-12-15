@@ -1,9 +1,4 @@
-
 console.log('Welcome to Fantasy Wheels ^_^');
-//get json file in question
-//import jsonCars from '../../json/cars.json';
-//const jsonCars = JSON.parse(require('fs').readFileSync('../../json/cars.json', 'utf8'));
-
 
 jsonCars = [
     {
@@ -304,7 +299,6 @@ function createCard(carData) {
     const cardBody = document.createElement('div');
     cardBody.classList.add('card-body');
 
-    //Create Heading
 
 
     // Create the car brand and model text
@@ -352,6 +346,7 @@ function createCard(carData) {
     btnPopupModal.name = carData['id'];
     btnPopupModal.dataset.bsToggle = 'modal';
     btnPopupModal.dataset.bsTarget = '#modalCarInfo';
+    
 
     // btnPopupModal.onclick = (popupCarInfoModal(this.name));
     btnPopupModal.onclick = function () { popupCarInfoModal(this.name) }
@@ -400,7 +395,7 @@ jsonCars.forEach(carData => {
 
 
 
-// Create a function to generate the Bootstrap modal
+// Finds bootstrap modal and attaches car info to it
 function popupCarInfoModal(carID) {
     // Get the modal element
     console.log('Loading Car Info: ', carID);
@@ -420,7 +415,7 @@ function popupCarInfoModal(carID) {
 
     // Create the modal content element
     const modalContent = document.createElement('div');
-    modalContent.classList.add('modal-content');
+    modalContent.classList.add('modal-content','px-4');
 
     // Create the modal header
     const modalHeader = document.createElement('div');
@@ -436,7 +431,7 @@ function popupCarInfoModal(carID) {
     const closeButton = document.createElement('button');
     closeButton.classList.add('close');
     closeButton.setAttribute('type', 'button');
-    closeButton.setAttribute('data-dismiss', 'modal');
+    closeButton.setAttribute('data-bs-dismiss', 'modal');
     closeButton.innerHTML = '&times;';
     modalHeader.appendChild(closeButton);
 
@@ -452,6 +447,12 @@ function popupCarInfoModal(carID) {
     modalImage.src = carData['src'];
     modalBody.appendChild(modalImage);
 
+    //Create close button (bottom)
+    const btnCloseButton = document.createElement('button');
+    btnCloseButton.classList.add('btn','btn-dark','mt-2');
+    btnCloseButton.setAttribute('type', 'button');
+    btnCloseButton.setAttribute('data-bs-dismiss', 'modal');
+    btnCloseButton.innerHTML='Close';
 
     //<img class="card-img-top" src="src/images/Mercedes-Benz-G-Class-Right-Front-Three-Quarter-58261.jpg"></img>
 
@@ -473,22 +474,42 @@ function popupCarInfoModal(carID) {
         modalBody.appendChild(row);
     }); */
 
-    const rowContent = createModalContent(carData);
-    modalBody.appendChild(rowContent);
-    modalContent.appendChild(modalBody);
-    modal.innerHTML = "";
-    modal.appendChild(modalContent);
+    const carContent = createModalContent(carData);
+    
+    modalBody.appendChild(carContent);
+    modalBody.appendChild(btnCloseButton);
 
-    //   return modal;
+    modalContent.appendChild(modalBody);
+
+    //Creating Modal from scratch
+    
+   // div class="modal-dialog
+    const modalDialog = document.createElement('div');
+    modalDialog.classList.add('modal-dialog');
+
+    //div class="modal-content"
+    const modalCont = document.createElement('div');
+    modalCont.classList.add('modal-content');
+    
+
+    //modal now contains no data
+    modal.innerHTML = "";
+
+    //add divs to modal in the correct order
+    modalCont.appendChild(modalContent);
+    modalDialog.appendChild(modalCont);
+    modal.appendChild(modalDialog);
+
+
 }
 
 
-
+//Generates a display of the car json object passed in
 function createModalContent(jsonData) {
+
+    // Create a div element    
     const rowContent = document.createElement('div');
     rowContent.classList.add('row');
-
-    // Create a div element
 
     // Create an image element and set the src attribute
     const imageElement = document.createElement('img');
@@ -556,13 +577,4 @@ function createModalContent(jsonData) {
 
     return rowContent;
 }
-
-
-
-
-
-
-
-
-
 
