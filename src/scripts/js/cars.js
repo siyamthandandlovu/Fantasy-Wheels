@@ -505,7 +505,6 @@ function popupCarInfoModal(carID) {
     modalCont.appendChild(modalContent);
     modalDialog.appendChild(modalCont);
     modal.appendChild(modalDialog);
-    //modal.appendChild(modalContent);
 
 
 }
