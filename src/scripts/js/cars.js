@@ -487,6 +487,7 @@ function popupCarInfoModal(carID) {
     
 
     modalBody.appendChild(carContent);
+    modalBody.appendChild(btnCloseButton);
 
     modalContent.appendChild(modalBody);
     modal.innerHTML = "";
