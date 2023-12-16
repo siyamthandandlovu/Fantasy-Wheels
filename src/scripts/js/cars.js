@@ -59,10 +59,10 @@ jsonCars = [
     },
     {
         "id": 4,
-        "src": "src/images/Dumb and Dumber Car 1436991864-0876ea6aaed85d846d5f06daf1fb12af.jpg",
-        "Car Brand": "Mutt Cuts",
-        "Model": "Bambridge 68",
-        "Year": 2308,
+        "src": "src/images/Adam West batmobile.jpg",
+        "Car Brand": "DC",
+        "Model": "WEST",
+        "Year": 1970,
         "Number of Seats": 6,
         "carFeats": [
             "Backup camera",
