@@ -265,7 +265,25 @@ jsonCars = [
         "Status": "In Production",
         "Best Use": "Daily Transport",
         "Cost": "R1 000 000"
-    }
+    },
+    {
+        "id": 15,
+        "src": "src/images/simple clear image of mr beans bright green car.jfif",
+        "Car Brand": "Bean",
+        "Model": "GRUB TDDY",
+        "Year": 1980,
+        "Number of Seats": 2,
+        "carFeats": [
+            "Navigation system",
+            "Bluetooth",
+            "Remote start",
+            "Blind spot monitoring"
+        ],
+        "Gearshift": "Manual",
+        "Status": "Available",
+        "Best Use": "Daily Transport",
+        "Cost": "R1 000 000"
+    } 
 ];
 
 //console.log(jsonCars);
