@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<!--Siyamthanda Ndlovu u21582735-->
+
+<html>
+    <head>
+       <link rel="stylesheet" type="text/css" href="css/FindCar.css">
+    </head>
+    <body>
+        <div class="divLogoHead" >
+            <img src="images/HorizontalLogo.png" class = "imgHeadLogo"/>
+        </div>
+        
+        <div class="divDivide" >
+        </div>
+
+        <h1 class="pageTitles">Find Car</h1>
+
+        <p class="pFindCarQuestions">Please fill in the form with your preferences so we can reccomend a car for you </p>
+        <form class ="formFilterCars">
+
+            <p class="pFindCarQuestions">*What is your preferred gearshift type?</p>
+            <input type="text" name="listGearShiftType" list="inputGearShiftType" class="inputFindCarElement" required>
+            <datalist id="inputGearShiftType"></option>
+            <option value="Auto Gearshift "></option>
+            <option value="Manual Gearshift "></option>
+            <option value="Either of them is fine"></option>
+            </datalist> 
+            
+            <br><br>
+
+            <p class="pFindCarQuestions">*Please select your minimum and maximum prices</p>
+        
+            Minimum Price <input type="text" name="inMinPrice" list="inputMinCarPrice"  class="inputFindCarElement" required><!--THE LIST= and datalist ID MUST BE THE SAME-->
+            <datalist id="inputMinCarPrice">
+                <option value="R500 000"></option>
+                <option value="R750 000"></option>
+                <option value="R900 000"></option>
+                <option value="R1 000 000"></option>
+                <option value="R2 00 000"></option>
+                <option value="R4 00 000"></option>
+                <option value="R7 00 000"></option>
+                <option value="R10 00 000"></option>
+                <option value="R15 00 000"></option>
+                <option value="R40 00 000"></option>
+                <option value="R150 00 000"></option>
+                <option value="R400 00 000"></option>
+                <option value="R750 00 000"></option>
+                <option value="R1 000 000 000"></option>
+            </datalist>
+
+
+
+            <!--<input type="text" name="city" list="cityname">
+            <datalist id="cityname">
+              <option value="Boston">
+              <option value="Cambridge">
+            </datalist> --->
+             Maximum Price <input type="text" name="inMaxPrice" list="inputMaxCarPrice"  class="inputFindCarElement"  required><!--THE LIST= and datalist ID MUST BE THE SAME-->
+            <datalist id="inputMaxCarPrice">
+                <option value="R500 000"></option>
+                <option value="R750 000"></option>
+                <option value="R900 000"></option>
+                <option value="R1 000 000"></option>
+                <option value="R2 00 000"></option>
+                <option value="R4 00 000"></option>
+                <option value="R7 00 000"></option>
+                <option value="R10 00 000"></option>
+                <option value="R15 00 000"></option>
+                <option value="R40 00 000"></option>
+                <option value="R150 00 000"></option>
+                <option value="R400 00 000"></option>
+                <option value="R750 00 000"></option>
+                <option value="R1 000 000 000"></option>
+            </datalist>
+
+            <br><br>
+
+            <p class="pFindCarQuestions">*Please select your preferred status of car</p>
+            <input type="text" name="listCarStatus" list="inputCarStatus" class="inputFindCarElement" required>
+            <datalist id="inputCarStatus"></option>
+            <option value="Available"></option>
+            <option value="In Production"></option>
+            <option value="Either of them is fine"></option>
+            </datalist> 
+
+
+            <br><br>
+
+            <p class="pFindCarQuestions">*Please select your preferred number of seats</p>
+            <input type="text" name="listNumSeats" list="inputNumSeats" class="inputFindCarElement" required>
+            <datalist id="inputNumSeats"></option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7+"></option>
+            </datalist> 
+
+
+            <br><br>
+
+
+
+            <p class="pFindCarQuestions">Please select your preferred car featues</p>
+            <input type="checkbox"  class="inputFindCarElement" id = "inputWantedCarFeatures"> Airbags
+            <input type="checkbox"  class="inputFindCarElement"> Bluetooth 
+            <input type="checkbox"  class="inputFindCarElement"> Navigation System <br>
+            <input type="checkbox"  class="inputFindCarElement"> WiFi
+            <input type="checkbox"  class="inputFindCarElement"> Blind Spot Monitoring
+
+            <br><br>
+
+            <p class="pFindCarQuestions">Please indicate what you would like to use the car for</p>
+            <input type="text" name="listCarUse" list="inputCareUse" class="inputFindCarElement" >
+            <datalist id="inputCareUse"></option>
+            <option value="Entertainment/Hobby"></option>
+            <option value="Daily Transport"></option>
+            <option value="Collectible/Display"></option>
+            </datalist> 
+
+            <br><br>
+            <input type="submit" value="Find me a car">
+
+        </form>
+        <br><br>
+
+
+        <div class="divDivide" >
+        </div>
+
+        <h3>Recomended Cars</h3>
+
+        <!--         <div class="divFindCar" id="divFindCar1"> 
+            <p id="pFindCarLabel1">Car 1</p>
+            <img class ="imgFindCar" id="imgFindCar1" src="" alt="Car1"/>
+            <table class="tableFindCar" id="tableFindCar1" >
+                <tr>
+                    <td>Car Brand</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Model</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Year</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Number of Seats</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td >Car Features</td> 
+                    <td> 
+                        <ul class="ulFindCar" id="idFindCar1"> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                        </ul> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gearshift</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Status</td> <td>-</td>
+                </tr>  
+                <tr>
+                    <td>Best Use</td> <td>-</td>
+                </tr>             
+                <tr>
+                    <td>Cost</td> <td>-</td>
+                </tr>
+            </table>
+        </div>
+        <br><br>
+
+        <div class="divFindCar" id="divFindCar2"> 
+            <p id="pFindCarLabel2">Car 2</p>
+            <img class ="imgFindCar" id="imgFindCar2" src="" alt="Car2"/>
+            <table class="tableFindCar" id="tableFindCar2" >
+                <tr>
+                    <td>Car Brand</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Model</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Year</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Number of Seats</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td >Car Features</td> 
+                    <td> 
+                        <ul class="ulFindCar" id="idFindCar2"> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                        </ul> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gearshift</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Status</td> <td>-</td>
+                </tr>  
+                <tr>
+                    <td>Best Use</td> <td>-</td>
+                </tr>             
+                <tr>
+                    <td>Cost</td> <td>-</td>
+                </tr>
+            </table>
+        </div>
+        <br><br>
+
+
+        <div class="divFindCar" id="divFindCar3"> 
+            <p id="pFindCarLabel3">Car 3</p>
+            <img class ="imgFindCar" id="imgFindCar3" src="" alt="Car3"/>
+            <table class="tableFindCar" id="tableFindCar3" >
+                <tr>
+                    <td>Car Brand</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Model</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Year</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Number of Seats</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td >Car Features</td> 
+                    <td> 
+                        <ul class="ulFindCar" id="idFindCar3"> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                        </ul> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gearshift</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Status</td> <td>-</td>
+                </tr>  
+                <tr>
+                    <td>Best Use</td> <td>-</td>
+                </tr>             
+                <tr>
+                    <td>Cost</td> <td>-</td>
+                </tr>
+            </table>
+        </div>
+        <br><br>
+
+
+        <div class="divFindCar" id="divFindCar4"> 
+            <p id="pFindCarLabel4">Car 4</p>
+            <img class ="imgFindCar" id="imgFindCar4" src="" alt="Car4"/>
+            <table class="tableFindCar" id="tableFindCar4" >
+                <tr>
+                    <td>Car Brand</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Model</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Year</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Number of Seats</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td >Car Features</td> 
+                    <td> 
+                        <ul class="ulFindCar" id="idFindCar4"> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                        </ul> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gearshift</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Status</td> <td>-</td>
+                </tr>  
+                <tr>
+                    <td>Best Use</td> <td>-</td>
+                </tr>             
+                <tr>
+                    <td>Cost</td> <td>-</td>
+                </tr>
+            </table>
+        </div>            
+        <br><br>
+
+
+        <div class="divFindCar" id="divFindCar5"> 
+            <p id="pFindCarLabel5">Car 5</p>
+            <img class ="imgFindCar" id="imgFindCar5" src="" alt="Car5" />
+            <table class="tableFindCar" id="tableFindCar5" >
+                <tr>
+                    <td>Car Brand</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Model</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Year</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Number of Seats</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td >Car Features</td> 
+                    <td> 
+                        <ul class="ulFindCar" id="idFindCar5"> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                        </ul> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gearshift</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Status</td> <td>-</td>
+                </tr>  
+                <tr>
+                    <td>Best Use</td> <td>-</td>
+                </tr>             
+                <tr>
+                    <td>Cost</td> <td>-</td>
+                </tr>
+            </table>
+        </div>
+        <br><br>-->
+
+         <div class="carDiv" id="divFindCar1"> 
+            <p id="pFindCarLabel1">Car 1</p>
+            <img class ="imgCars" id="imgFindCar1" src="" alt="Car1"/>
+            <table class="carDesc" id="tableFindCar1" >
+                <tr>
+                    <td>Car Brand</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Model</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Year</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Number of Seats</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td >Car Features</td> 
+                    <td> 
+                        <ul class="carFeats" id="idFindCar1"> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                        </ul> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gearshift</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Status</td> <td>-</td>
+                </tr>  
+                <tr>
+                    <td>Best Use</td> <td>-</td>
+                </tr>             
+                <tr>
+                    <td>Cost</td> <td>-</td>
+                </tr>
+            </table>
+        </div>
+        <br><br>
+
+        <div class="carDiv" id="divFindCar2"> 
+            <p id="pFindCarLabel2">Car 2</p>
+            <img class ="imgCars" id="imgFindCar2" src="" alt="Car2"/>
+            <table class="carFeats" id="tableFindCar2" >
+                <tr>
+                    <td>Car Brand</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Model</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Year</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Number of Seats</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td >Car Features</td> 
+                    <td> 
+                        <ul class="carFeats" id="idFindCar2"> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                        </ul> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gearshift</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Status</td> <td>-</td>
+                </tr>  
+                <tr>
+                    <td>Best Use</td> <td>-</td>
+                </tr>             
+                <tr>
+                    <td>Cost</td> <td>-</td>
+                </tr>
+            </table>
+        </div>
+        <br><br>
+
+
+        <div class="carDiv" id="divFindCar3"> 
+            <p id="pFindCarLabel3">Car 3</p>
+            <img class ="imgCars" id="imgFindCar3" src="" alt="Car3"/>
+            <table class="carDesc" id="tableFindCar3" >
+                <tr>
+                    <td>Car Brand</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Model</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Year</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Number of Seats</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td >Car Features</td> 
+                    <td> 
+                        <ul class="carFeats" id="idFindCar3"> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                        </ul> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gearshift</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Status</td> <td>-</td>
+                </tr>  
+                <tr>
+                    <td>Best Use</td> <td>-</td>
+                </tr>             
+                <tr>
+                    <td>Cost</td> <td>-</td>
+                </tr>
+            </table>
+        </div>
+        <br><br>
+
+
+        <div class="carDiv" id="divFindCar4"> 
+            <p id="pFindCarLabel4">Car 4</p>
+            <img class ="imgCars" id="imgFindCar4" src="" alt="Car4"/>
+            <table class="carDesc" id="tableFindCar4" >
+                <tr>
+                    <td>Car Brand</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Model</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Year</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Number of Seats</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td >Car Features</td> 
+                    <td> 
+                        <ul class="carFeats" id="idFindCar4"> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                        </ul> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gearshift</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Status</td> <td>-</td>
+                </tr>  
+                <tr>
+                    <td>Best Use</td> <td>-</td>
+                </tr>             
+                <tr>
+                    <td>Cost</td> <td>-</td>
+                </tr>
+            </table>
+        </div>            
+        <br><br>
+
+
+        <div class="carDiv" id="divFindCar5"> 
+            <p id="pFindCarLabel5">Car 5</p>
+            <img class ="imgCars" id="imgFindCar5" src="" alt="Car5" />
+            <table class="carDesc" id="tableFindCar5" >
+                <tr>
+                    <td>Car Brand</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Model</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Year</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Number of Seats</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td >Car Features</td> 
+                    <td> 
+                        <ul class="carFeats" id="idFindCar5"> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                            <li>-</li> 
+                        </ul> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gearshift</td> <td>-</td>
+                </tr>
+                <tr>
+                    <td>Status</td> <td>-</td>
+                </tr>  
+                <tr>
+                    <td>Best Use</td> <td>-</td>
+                </tr>             
+                <tr>
+                    <td>Cost</td> <td>-</td>
+                </tr>
+            </table>
+        </div>
+        <br><br>
+
+
+
+
+        <div class="navBarTagDiv"> 
+            <nav class="navTag">
+                <a href="index.html">Cars Page</a> | <a href="Brands.html">Brands</a> | <a href="FindCar.html">Find a Car</a> | <a href="Compare.html">Compare Cars</a>
+            </nav>
+        </div>
+        
+    </body>
+</html>
