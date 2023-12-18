@@ -285,13 +285,6 @@ jsonCars = [
         "Cost": "R1 000 000"
     } 
 ];
-
-//console.log(jsonCars);
-
-//Start looping through jsonCars
-//create a boot strap modal with a button, 
-//where each button has a name with the same ID as the car
-
 // Assuming you have the JSON data stored in a variable called 'jsonData'
 
 // Create a function to generate the HTML for the Bootstrap card
