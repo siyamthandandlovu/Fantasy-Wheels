@@ -17,26 +17,30 @@ jsonCars = [
         ],
         "Gearshift": "Auto",
         "Status": "In Production",
-        "Best Use": "Daily Transport",
-        "Cost": "R67 089 000"
+        "Series/Film": "Avatar x Mercedes",
+        "Cost": "R107 089 000"
     },
     {
         "id": 2,
         "src": "src/images/The Bumble Bee car.jpg",
         "Car Brand": "Chevrolet",
-        "Model": "The Bumble",
+        "Model": "Bumblebee B127",
         "Year": 2013,
         "Number of Seats": 4,
         "carFeats": [
-            "Car Communication",
-            "Navigation system",
-            "Bluetooth",
-            "Remote start"
+            "Voice Control Radio",
+            "Auto Pilot",
+            "Ammunition",
+            "Car Transformation",
+            "Fuel Effecient",
+            "Undersea Adaptability",
+            "Defense Mode",
+            "Car Cloning"
         ],
         "Gearshift": "Auto",
-        "Cost": "R1 697 600",
+        "Cost": "R100 697 600",
         "Status": "In Production",
-        "Best Use": "Daily Transport"
+        "Series/Film": "Transformers"
     },
     {
         "id": 3,
@@ -55,7 +59,7 @@ jsonCars = [
         "Gearshift": "Auto",
         "Cost": "R780 000 000",
         "Status": "In Production",
-        "Best Use": "Daily Transport"
+        "Series/Film": "Daily Transport"
     },
     {
         "id": 4,
@@ -74,7 +78,7 @@ jsonCars = [
         "Gearshift": "Auto",
         "Cost": "R780 000 000",
         "Status": "In Production",
-        "Best Use": "Daily Transport"
+        "Series/Film": "Daily Transport"
     },
     {
         "id": 5,
@@ -93,7 +97,7 @@ jsonCars = [
         "Gearshift": "Auto",
         "Cost": "R780 000 000",
         "Status": "In Production",
-        "Best Use": "Daily Transport"
+        "Series/Film": "Daily Transport"
     },
     {
         "id": 6,
@@ -111,7 +115,7 @@ jsonCars = [
         ],
         "Gearshift": "Auto",
         "Status": "In Production",
-        "Best Use": "Daily Transport",
+        "Series/Film": "Daily Transport",
         "Cost": "R70 951 000"
     },
     {
@@ -130,7 +134,7 @@ jsonCars = [
         ],
         "Gearshift": "Auto",
         "Status": "In Production",
-        "Best Use": "Daily Transport",
+        "Series/Film": "Daily Transport",
         "Cost": "R1 023 000"
     },
     {
@@ -149,7 +153,7 @@ jsonCars = [
         ],
         "Gearshift": "Auto",
         "Status": "In Production",
-        "Best Use": "Daily Transport",
+        "Series/Film": "Daily Transport",
         "Cost": "R50 000 000"
     },
     {
@@ -168,8 +172,8 @@ jsonCars = [
         ],
         "Gearshift": "Auto",
         "Status": "In Production",
-        "Best Use": "Daily Transport",
-        "Cost": "R960 000 000"
+        "Series/Film": "West World",
+        "Cost": "R890 000 000"
     },
     {
         "id": 10,
@@ -179,16 +183,21 @@ jsonCars = [
         "Year": 2008,
         "Number of Seats": 2,
         "carFeats": [
-            "Backup camera",
+            "Bullet Proof Glass",
             "Navigation system",
-            "Bluetooth",
+            "Electric Grid Control",
             "Remote start",
+            "Fuel Effeciency",
+            "Super Charger Kit",
+            "Engine Cooling",
+            "V-8 Powered",
+            "LS3 Engine",
             "Blind spot monitoring"
         ],
         "Gearshift": "Auto",
         "Status": "In Production",
-        "Best Use": "Daily Transport",
-        "Cost": "R50 000 000"
+        "Series/Film": "Daily Transport",
+        "Cost": "R55 000 000"
     },
     {
         "id": 11,
@@ -206,7 +215,7 @@ jsonCars = [
         ],
         "Gearshift": "Auto",
         "Status": "In Production",
-        "Best Use": "Daily Transport",
+        "Series/Film": "Daily Transport",
         "Cost": "R1 273 400"
     },
     {
@@ -225,27 +234,31 @@ jsonCars = [
         ],
         "Gearshift": "Manual",
         "Status": "In Production",
-        "Best Use": "Daily Transport",
+        "Series/Film": "Daily Transport",
         "Cost": "R1 000 000"
     },
     {
         "id": 13,
         "src": "src/images/Bale mobile 1.jpg",
         "Car Brand": "Bruce Wayne Enterprises",
-        "Model": "Dark Knight II",
+        "Model": "Dark Knight II Tumbler",
         "Year": 2008,
         "Number of Seats": 2,
         "carFeats": [
-            "Backup camera",
-            "Navigation system",
-            "Bluetooth",
+            "Jet Engine",
+            "Bullet Proof Exterior",
+            "Motorcycle Transformation",
+            "Missile Deployment",
+            "Night Vision Windshield",
+            "Electric Battery",
             "Remote start",
+            "60 mph",
             "Blind spot monitoring"
         ],
         "Gearshift": "Auto",
-        "Status": "In Production",
-        "Best Use": "Daily Transport",
-        "Cost": "R50 000 000"
+        "Status": "Available",
+        "Series/Film": "Daily Transport",
+        "Cost": "R780 400 000"
     },
     {
         "id": 14,
@@ -263,25 +276,151 @@ jsonCars = [
         ],
         "Gearshift": "Auto",
         "Status": "In Production",
-        "Best Use": "Daily Transport",
+        "Series/Film": "Daily Transport",
         "Cost": "R1 000 000"
     },
     {
         "id": 15,
         "src": "src/images/simple clear image of mr beans bright green car.jfif",
         "Car Brand": "Bean",
-        "Model": "GRUB TDDY",
+        "Model": " TEDDY",
         "Year": 1980,
         "Number of Seats": 2,
         "carFeats": [
-            "Navigation system",
+            "Seat Warmer",
             "Bluetooth",
             "Remote start",
             "Blind spot monitoring"
         ],
         "Gearshift": "Manual",
         "Status": "Available",
-        "Best Use": "Daily Transport",
+        "Series/Film": "Mr Bean",
+        "Cost": "R1 000 000"
+    },
+    {
+        "id": 16,
+        "src": "src/images/optimus-van-1.webp",
+        "Car Brand": "Transformers",
+        "Model": "Optimus Prime",
+        "Year": 1980,
+        "Number of Seats": 2,
+        "carFeats": [
+            "Seat Warmer",
+            "Bluetooth",
+            "Remote start",
+            "Blind spot monitoring"
+        ],
+        "Gearshift": "Manual",
+        "Status": "Available",
+        "Series/Film": "Transformers",
+        "Cost": "R1 000 000"
+    },
+    {
+        "id": 17,
+        "src": "src/images/simple clear image of mr beans bright green car.jfif",
+        "Car Brand": "Bean",
+        "Model": "Robin Motorcycle",
+        "Year": 1980,
+        "Number of Seats": 2,
+        "carFeats": [
+            "Seat Warmer",
+            "Bluetooth",
+            "Remote start",
+            "Blind spot monitoring"
+        ],
+        "Gearshift": "Manual",
+        "Status": "Available",
+        "Series/Film": "Dark Knight II",
+        "Cost": "R1 000 000"
+    },
+    {
+        "id": 18,
+        "src": "src/images/diana-jet.jpg",
+        "Car Brand": "DC",
+        "Model": "Diana Invisible Jet",
+        "Year": 1980,
+        "Number of Seats": 28,
+        "carFeats": [
+            "Seat Warmer",
+            "Bluetooth",
+            "Remote start",
+            "Blind spot monitoring"
+        ],
+        "Gearshift": "Automatic",
+        "Status": "Retired",
+        "Series/Film": "Wonder Woman ",
+        "Cost": "R1 000 000"
+    },
+    {
+        "id": 19,
+        "src": "src/images/simple clear image of mr beans bright green car.jfif",
+        "Car Brand": "Marvel",
+        "Model": "Quinjet Jet",
+        "Year": 2008,
+        "Number of Seats": 8,
+        "carFeats": [
+            "Invisibility",
+            "Bluetooth",
+            "Remote start",
+            "Blind spot monitoring"
+        ],
+        "Gearshift": "Automatic",
+        "Status": "Retired",
+        "Series/Film": "The Avengers",
+        "Cost": "R499 000 000"
+    },
+    {
+        "id": 20,
+        "src": "src/images/back-future-car.jpg",
+        "Car Brand": "Porsche",
+        "Model": "DeLorean DMC -12",
+        "Year": 1981,
+        "Number of Seats": 8,
+        "carFeats": [
+            "Time Travel",
+            "V-8 Engine",
+            "Remote start",
+            "Flight"
+        ],
+        "Gearshift": "Automatic",
+        "Status": "Retired",
+        "Series/Film": "The Avengers",
+        "Cost": "R1 000 000"
+    },
+    {
+        "id": 20,
+        "src": "src/images/john-wick-mustang.webp",
+        "Car Brand": "Mustang",
+        "Model": "John Wick",
+        "Year": 1981,
+        "Number of Seats": 8,
+        "carFeats": [
+            "Time Travel",
+            "V-8 Engine",
+            "Remote start",
+            "Flight"
+        ],
+        "Gearshift": "Automatic",
+        "Status": "Retired",
+        "Series/Film": "John Wick",
+        "Cost": "R1 000 000"
+    },
+    {
+        "id": 20,
+        "src": "src/images/ghostbuster-van-1.jpg",
+        "Car Brand": "Cadillac",
+        "Model": "GhostBusters Miller Meteor",
+        "Year": 1859,
+        "Number of Seats": 8,
+        "carFeats": [
+            "Time Travel",
+            "V-8 Engine",
+            "Remote start",
+            "Flight"
+        ],
+        "Gearshift": "Automatic",
+        "Status": "Retired",
+        "Series/Film": "Ghost Busters",
         "Cost": "R1 000 000"
     } 
 ];
@@ -556,7 +695,7 @@ function createModalContent(jsonData) {
     tbodyElement.appendChild(createRow('Model', jsonData.Model));
     tbodyElement.appendChild(createRow('Year', jsonData.Year));
     tbodyElement.appendChild(createRow('Cost', jsonData.Cost));
-    tbodyElement.appendChild(createRow('Best Use', jsonData['Best Use']));
+    tbodyElement.appendChild(createRow('Series/Film', jsonData['Series/Film']));
 
     // Create a row for car feats using a list
     const carFeatsRow = document.createElement('tr');
