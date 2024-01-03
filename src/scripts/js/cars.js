@@ -498,7 +498,7 @@ function createCard(carData) {
 
     const carListItem1 = document.createElement('li');
     carListItem1.classList.add('list-group-item');
-    carListItem1.innerHTML = `Status : ${carData['Status']}`;
+    carListItem1.innerHTML = `Series/Film : ${carData['Series/Film']}`;
 
     const carListItem2 = document.createElement('li');
     carListItem2.classList.add('list-group-item');
