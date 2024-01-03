@@ -488,7 +488,7 @@ jsonCars = [
             "Hidden Weapon Compartments",
             "Tactical Navigation System",
             "Adaptive Suspension System",
-            "Remote start" 
+            "Remote start"
         ],
         "Gearshift": "Automatic",
         "Status": "Retired",
@@ -530,7 +530,7 @@ jsonCars = [
         "Status": "Retired",
         "Series/Film": "Ghost Rider",
         "Cost": "R81 000 000"
-    } 
+    }
 ];
 // Assuming you have the JSON data stored in a variable called 'jsonData'
 
@@ -539,7 +539,7 @@ function createCard(carData) {
     // Create the card element
     const card = document.createElement('div');
     //card.classList.add('card');
-    card.classList.add('col-sm-6', 'carCard', 'my-4','card-container');
+    card.classList.add('col-sm-6', 'carCard', 'my-4', 'card-container');
 
 
     //Inner card div
@@ -561,7 +561,7 @@ function createCard(carData) {
 
     // Create the car brand and model text
     const carHeading = document.createElement('h4');
-    carHeading.classList.add('card-title','fw-bold');
+    carHeading.classList.add('card-title', 'fw-bold');
     carHeading.textContent = `${carData['Car Brand']} ${carData.Model}`;
     cardBody.appendChild(carHeading);
 
@@ -578,7 +578,7 @@ function createCard(carData) {
 
 
     const carListItem1 = document.createElement('li');
-    carListItem1.classList.add('list-group-item','fs-5','fw-bold');
+    carListItem1.classList.add('list-group-item', 'fs-5', 'fw-bold');
     carListItem1.innerHTML = `${carData['Series/Film']}`;
 
     const carListItem2 = document.createElement('li');
@@ -602,7 +602,7 @@ function createCard(carData) {
     btnPopupModal.name = carData['id'];
     btnPopupModal.dataset.bsToggle = 'modal';
     btnPopupModal.dataset.bsTarget = '#modalCarInfo';
-    
+
 
     btnPopupModal.onclick = function () { popupCarInfoModal(this.name) }
 
@@ -659,7 +659,7 @@ function popupCarInfoModal(carID) {
 
     // Create the modal content element
     const modalContent = document.createElement('div');
-    modalContent.classList.add('modal-content','px-4');
+    modalContent.classList.add('modal-content', 'px-4');
 
     // Create the modal header
     const modalHeader = document.createElement('div');
@@ -693,29 +693,29 @@ function popupCarInfoModal(carID) {
 
     //Create close button (bottom)
     const btnCloseButton = document.createElement('button');
-    btnCloseButton.classList.add('btn','btn-dark','mt-2');
+    btnCloseButton.classList.add('btn', 'btn-dark', 'mt-2');
     btnCloseButton.setAttribute('type', 'button');
     btnCloseButton.setAttribute('data-bs-dismiss', 'modal');
-    btnCloseButton.innerHTML='Close';
+    btnCloseButton.innerHTML = 'Close';
 
 
     const carContent = createModalContent(carData);
-    
+
     modalBody.appendChild(carContent);
     modalBody.appendChild(btnCloseButton);
 
     modalContent.appendChild(modalBody);
 
     //Creating Modal from scratch
-    
-   // div class="modal-dialog
+
+    // div class="modal-dialog
     const modalDialog = document.createElement('div');
     modalDialog.classList.add('modal-dialog');
 
     //div class="modal-content"
     const modalCont = document.createElement('div');
     modalCont.classList.add('modal-content');
-    
+
 
     //modal now contains no data
     modal.innerHTML = "";
