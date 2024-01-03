@@ -59,7 +59,7 @@ jsonCars = [
         "Gearshift": "Auto",
         "Cost": "R780 000 000",
         "Status": "In Production",
-        "Series/Film": "Daily Transport"
+        "Series/Film": "Dumb & Dumber"
     },
     {
         "id": 4,
@@ -78,7 +78,7 @@ jsonCars = [
         "Gearshift": "Auto",
         "Cost": "R780 000 000",
         "Status": "In Production",
-        "Series/Film": "Daily Transport"
+        "Series/Film": "Batman & Robin"
     },
     {
         "id": 5,
@@ -97,7 +97,7 @@ jsonCars = [
         "Gearshift": "Auto",
         "Cost": "R780 000 000",
         "Status": "In Production",
-        "Series/Film": "Daily Transport"
+        "Series/Film": "Westworld"
     },
     {
         "id": 6,
@@ -115,7 +115,7 @@ jsonCars = [
         ],
         "Gearshift": "Auto",
         "Status": "In Production",
-        "Series/Film": "Daily Transport",
+        "Series/Film": "Justice League : The Synder Cut",
         "Cost": "R70 951 000"
     },
     {
@@ -134,26 +134,27 @@ jsonCars = [
         ],
         "Gearshift": "Auto",
         "Status": "In Production",
-        "Series/Film": "Daily Transport",
+        "Series/Film": "Fast & Furious",
         "Cost": "R1 023 000"
     },
     {
         "id": 8,
-        "src": "src/images/Mercedes-Benz-G-Class-Right-Front-Three-Quarter-58261.jpg",
-        "Car Brand": "Mercedes-Benz",
-        "Model": "G 63 AMG",
+        "src": "src/images/lamborghini-huracan-performante-launch-south-africa-johannesburg-zero2turbo-4.jpg",
+        "Car Brand": "Lamborghini",
+        "Model": "Hurucan",
         "Year": 2018,
         "Number of Seats": 4,
         "carFeats": [
-            "Backup camera",
-            "Navigation system",
-            "Bluetooth",
+            "Nitrous Oxide Boost System",
+            "Custom Racing Suspension",
+            "Aerodynamic Body Kit",
+            "High-Performance Exhaust System",
             "Remote start",
             "Blind spot monitoring"
         ],
         "Gearshift": "Auto",
         "Status": "In Production",
-        "Series/Film": "Daily Transport",
+        "Series/Film": "Fast & Furious",
         "Cost": "R50 000 000"
     },
     {
@@ -196,13 +197,13 @@ jsonCars = [
         ],
         "Gearshift": "Auto",
         "Status": "In Production",
-        "Series/Film": "Daily Transport",
+        "Series/Film": "Fast & Furious",
         "Cost": "R55 000 000"
     },
     {
         "id": 11,
-        "src": "src/images/bmw-m4-speed-yellow-03.jpg",
-        "Car Brand": "BMW",
+        "src": "https://www.driving.co.uk/wp-content/uploads/sites/5/2017/06/Ansel-Elgort-MAMM-2.jpg?resize=1024,638",
+        "Car Brand": "Fiat",
         "Model": "M4",
         "Year": 2021,
         "Number of Seats": 4,
@@ -215,7 +216,7 @@ jsonCars = [
         ],
         "Gearshift": "Auto",
         "Status": "In Production",
-        "Series/Film": "Daily Transport",
+        "Series/Film": "Baby Driver",
         "Cost": "R1 273 400"
     },
     {
@@ -234,7 +235,7 @@ jsonCars = [
         ],
         "Gearshift": "Manual",
         "Status": "In Production",
-        "Series/Film": "Daily Transport",
+        "Series/Film": "Scooby Doo",
         "Cost": "R1 000 000"
     },
     {
@@ -262,10 +263,10 @@ jsonCars = [
     },
     {
         "id": 14,
-        "src": "src/images/bmw_x3_2017_07.jpg",
-        "Car Brand": "BMW",
+        "src": "https://i.pinimg.com/originals/4c/ff/15/4cff15a86e5d290fd5c384d8f81b9723.jpg",
+        "Car Brand": "Audi",
         "Model": "X3 SUV",
-        "Year": 2022,
+        "Year": 2002,
         "Number of Seats": 4,
         "carFeats": [
             "Backup camera",
@@ -276,7 +277,7 @@ jsonCars = [
         ],
         "Gearshift": "Auto",
         "Status": "In Production",
-        "Series/Film": "Daily Transport",
+        "Series/Film": "The transporter",
         "Cost": "R1 000 000"
     },
     {
@@ -305,8 +306,10 @@ jsonCars = [
         "Year": 1980,
         "Number of Seats": 2,
         "carFeats": [
-            "Seat Warmer",
-            "Bluetooth",
+            "Transforming Mechanism",
+            "Ion Blaster Weapon System",
+            "Advanced Cybertronian Technology",
+            "Autobot Leader AI",
             "Remote start",
             "Blind spot monitoring"
         ],
@@ -317,9 +320,9 @@ jsonCars = [
     },
     {
         "id": 17,
-        "src": "src/images/simple clear image of mr beans bright green car.jfif",
-        "Car Brand": "Bean",
-        "Model": "Robin Motorcycle",
+        "src": "https://wallpaperaccess.com/full/3908257.jpg",
+        "Car Brand": "DC",
+        "Model": "Batman Motorcycle",
         "Year": 1980,
         "Number of Seats": 2,
         "carFeats": [
@@ -341,21 +344,21 @@ jsonCars = [
         "Year": 1980,
         "Number of Seats": 28,
         "carFeats": [
-            "Seat Warmer",
-            "Bluetooth",
-            "Remote start",
-            "Blind spot monitoring"
+            "Invisibility Cloaking Technology",
+            "High-speed Jet Engines",
+            "Advanced Amazonian Armor",
+            "Invisible to Radar"
         ],
         "Gearshift": "Automatic",
         "Status": "Retired",
-        "Series/Film": "Wonder Woman ",
+        "Series/Film": "Wonder Woman",
         "Cost": "R1 000 000"
     },
     {
         "id": 19,
-        "src": "src/images/simple clear image of mr beans bright green car.jfif",
+        "src": "https://th.bing.com/th/id/R.8712ea8e25d8c4a3055978b4a971f679?rik=5khGraBdeh5JQg&pid=ImgRaw&r=0",
         "Car Brand": "Marvel",
-        "Model": "Quinjet Jet",
+        "Model": "Quinjet",
         "Year": 2008,
         "Number of Seats": 8,
         "carFeats": [
@@ -371,7 +374,7 @@ jsonCars = [
     },
     {
         "id": 20,
-        "src": "src/images/back-future-car.jpg",
+        "src": "https://images.hdqwalls.com/download/back-to-the-future-movie-li-3840x2160.jpg",
         "Car Brand": "Porsche",
         "Model": "DeLorean DMC -12",
         "Year": 1981,
@@ -380,11 +383,15 @@ jsonCars = [
             "Time Travel",
             "V-8 Engine",
             "Remote start",
-            "Flight"
+            "Flight",
+            "Flux Capacitor for Time Travel",
+            "Gull-Wing Doors",
+            "Advanced In-Car Entertainment System",
+            "Adaptive Cruise Control"
         ],
         "Gearshift": "Automatic",
         "Status": "Retired",
-        "Series/Film": "The Avengers",
+        "Series/Film": "Back to the Future",
         "Cost": "R1 000 000"
     },
     {
@@ -395,10 +402,11 @@ jsonCars = [
         "Year": 1981,
         "Number of Seats": 8,
         "carFeats": [
-            "Time Travel",
-            "V-8 Engine",
-            "Remote start",
-            "Flight"
+            "Bulletproof Windows",
+            "Hidden Weapon Compartments",
+            "Tactical Navigation System",
+            "Adaptive Suspension System",
+            "Remote start" 
         ],
         "Gearshift": "Automatic",
         "Status": "Retired",
@@ -406,22 +414,40 @@ jsonCars = [
         "Cost": "R1 000 000"
     },
     {
-        "id": 20,
+        "id": 21,
         "src": "src/images/ghostbuster-van-1.jpg",
         "Car Brand": "Cadillac",
         "Model": "GhostBusters Miller Meteor",
         "Year": 1859,
         "Number of Seats": 8,
         "carFeats": [
-            "Time Travel",
-            "V-8 Engine",
-            "Remote start",
-            "Flight"
+            "Ectoplasmic Sensor Array",
+            "Proton Pack Charging Dock",
+            "Ghost Containment System",
+            "Siren and Emergency Lights"
         ],
         "Gearshift": "Automatic",
         "Status": "Retired",
         "Series/Film": "Ghost Busters",
         "Cost": "R1 000 000"
+    },
+    {
+        "id": 21,
+        "src": "src/images/ghost-rider-car-full.jpg",
+        "Car Brand": "Cadillac",
+        "Model": "GhostRider",
+        "Year": 1859,
+        "Number of Seats": 8,
+        "carFeats": [
+            "Ectoplasmic Sensor Array",
+            "Proton Pack Charging Dock",
+            "Ghost Containment System",
+            "Siren and Emergency Lights"
+        ],
+        "Gearshift": "Automatic",
+        "Status": "Retired",
+        "Series/Film": "Ghost Rider",
+        "Cost": "R81 000 000"
     } 
 ];
 // Assuming you have the JSON data stored in a variable called 'jsonData'
