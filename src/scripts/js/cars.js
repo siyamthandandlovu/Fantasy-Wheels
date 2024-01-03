@@ -630,25 +630,6 @@ function popupCarInfoModal(carID) {
     btnCloseButton.setAttribute('data-bs-dismiss', 'modal');
     btnCloseButton.innerHTML='Close';
 
-    //<img class="card-img-top" src="src/images/Mercedes-Benz-G-Class-Right-Front-Three-Quarter-58261.jpg"></img>
-
-    // Populate the modal body with the car data
-    /*  Object.entries(carData).forEach(([key, value]) => {
-        const row = document.createElement('div');
-        row.classList.add('row');
-
-        const label = document.createElement('div');
-        label.classList.add('col-4', 'font-weight-bold');
-        label.textContent = key;
-        row.appendChild(label);
-
-        const content = document.createElement('div');
-        content.classList.add('col-8');
-        content.textContent = value;
-        row.appendChild(content);
-
-        modalBody.appendChild(row);
-    }); */
 
     const carContent = createModalContent(carData);
     
