@@ -478,8 +478,8 @@ function createCard(carData) {
 
 
     // Create the car brand and model text
-    const carHeading = document.createElement('h5');
-    carHeading.classList.add('card-title');
+    const carHeading = document.createElement('h4');
+    carHeading.classList.add('card-title','fw-bold');
     carHeading.textContent = `${carData['Car Brand']} ${carData.Model}`;
     cardBody.appendChild(carHeading);
 
@@ -497,8 +497,8 @@ function createCard(carData) {
 
 
     const carListItem1 = document.createElement('li');
-    carListItem1.classList.add('list-group-item','fs-5');
-    carListItem1.innerHTML = ` ${carData['Series/Film']}`;
+    carListItem1.classList.add('list-group-item','fs-5','fw-bold');
+    carListItem1.innerHTML = `${carData['Series/Film']}`;
 
     const carListItem2 = document.createElement('li');
     carListItem2.classList.add('list-group-item');
