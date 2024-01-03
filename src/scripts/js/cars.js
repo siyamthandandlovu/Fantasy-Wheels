@@ -96,7 +96,7 @@ jsonCars = [
         "id": 5,
         "src": "src/images/westworld lux suv victor-martinez-veh-luxsuv-05-v3-190206-vm.jpg",
         "Car Brand": "Delos",
-        "Model": "Bambridge 68",
+        "Model": "Maverick",
         "Year": 2308,
         "Number of Seats": 6,
         "carFeats": [
@@ -143,9 +143,9 @@ jsonCars = [
     {
         "id": 7,
         "src": "src/images/Fast furious Letty Chevrolet.jpg",
-        "Car Brand": "Chevrolet",
-        "Model": "Letty",
-        "Year": 2017,
+        "Car Brand": "Jenson",
+        "Model": "Interceptor",
+        "Year": 1973,
         "Number of Seats": 2,
         "carFeats": [
             "Launch Control",
