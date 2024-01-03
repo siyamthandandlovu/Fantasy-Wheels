@@ -484,11 +484,10 @@ function createCard(carData) {
     cardBody.appendChild(carHeading);
 
     // Create the brand text
-    const brandText = document.createElement('p');
-    brandText.classList.add('card-text');
-    brandText.textContent = carData['Brand'];
-    brandText.textContent = `Car Features: ${carData.carFeats.join(", ")}`
-    cardBody.appendChild(brandText);
+    const featuresText = document.createElement('p');
+    featuresText.classList.add('card-text');
+    featuresText.textContent = `Car Features: ${carData.carFeats.join(", ")}`
+    cardBody.appendChild(featuresText);
 
 
     //Car features list
