@@ -65,7 +65,7 @@ jsonCars = [
         "id": 4,
         "src": "src/images/Adam West batmobile.jpg",
         "Car Brand": "DC",
-        "Model": "WEST",
+        "Model": "AD WEST",
         "Year": 1970,
         "Number of Seats": 6,
         "carFeats": [
@@ -88,11 +88,17 @@ jsonCars = [
         "Year": 2308,
         "Number of Seats": 6,
         "carFeats": [
-            "Backup camera",
-            "Navigation system",
-            "Bluetooth",
-            "Remote start",
-            "Blind spot monitoring"
+            "Autonomous Driving Capability",
+            "Augmented Reality Windshield",
+            "Self-Healing Body Panels",
+            "Biometric Driver Identification",
+            "Interactive Holographic Controls",
+            "Advanced Artificial Intelligence Assistant",
+            "Energy-Dense and Rapid-Charging Batteries",
+            "Shape-Shifting Body for Aerodynamics",
+            "Brain-Computer Interface for Controls",
+            "Predictive Maintenance System",
+            "360-Degree Exterior Cameras"
         ],
         "Gearshift": "Auto",
         "Cost": "R780 000 000",
@@ -107,11 +113,15 @@ jsonCars = [
         "Year": 2041,
         "Number of Seats": 2,
         "carFeats": [
-            "Backup camera",
-            "Navigation system",
-            "Bluetooth",
-            "Remote start",
-            "Blind spot monitoring"
+            "Carbon Ceramic Brake System",
+            "Electronic Stability Control",
+            "Variable Valve Timing",
+            "Multifunction Steering Wheel",
+            "Alcantara or Carbon Fiber Interior Accents",
+            "Innovative Head-Up Display",
+            "Performance Data Recorder",
+            "Automated Manual Transmission",
+            "Advanced Driver Assistance Systems"
         ],
         "Gearshift": "Auto",
         "Status": "In Production",
@@ -126,11 +136,16 @@ jsonCars = [
         "Year": 2017,
         "Number of Seats": 2,
         "carFeats": [
-            "Backup camera",
-            "Navigation system",
-            "Bluetooth",
+            "Launch Control",
+            "Customizable Driving Modes",
+            "Aerodynamic Spoiler",
+            "Rear-Wheel or All-Wheel Drive",
+            "Dual-Clutch Transmission",
             "Remote start",
-            "Blind spot monitoring"
+            "Blind spot monitoring",
+            "Carbon Fiber Construction",
+            "Advanced Suspension System"
+
         ],
         "Gearshift": "Auto",
         "Status": "In Production",
@@ -165,11 +180,16 @@ jsonCars = [
         "Year": 2308,
         "Number of Seats": 9,
         "carFeats": [
-            "Backup camera",
-            "Navigation system",
-            "Bluetooth",
-            "Remote start",
-            "Blind spot monitoring"
+            "360-Degree Exterior Cameras",
+            "Embedded Health Monitoring Sensors",
+            "Smart Traffic Integration for Optimal Routing",
+            "Advanced Vehicle-to-Everything (V2X) Communication",
+            "Ultra-Lightweight Nanomaterial Construction",
+            "Transparent OLED Displays for Windows",
+            "Energy-Harvesting Body Panels",
+            "Integrated Augmented Reality Navigation",
+            "Biometric Passenger Recognition and Customization",
+            "Advanced Vehicle-to-Grid (V2G) Technology"
         ],
         "Gearshift": "Auto",
         "Status": "In Production",
@@ -251,14 +271,12 @@ jsonCars = [
             "Motorcycle Transformation",
             "Missile Deployment",
             "Night Vision Windshield",
-            "Electric Battery",
-            "Remote start",
-            "60 mph",
-            "Blind spot monitoring"
+            "Adaptive Camouflage for Various Environments",
+            "AI-Piloting System with Combat Strategies"
         ],
         "Gearshift": "Auto",
         "Status": "Available",
-        "Series/Film": "Daily Transport",
+        "Series/Film": "The Dark Knight",
         "Cost": "R780 400 000"
     },
     {
@@ -326,10 +344,17 @@ jsonCars = [
         "Year": 1980,
         "Number of Seats": 2,
         "carFeats": [
-            "Seat Warmer",
-            "Bluetooth",
-            "Remote start",
-            "Blind spot monitoring"
+            "Detachable Escape Pods",
+            "Customizable Utility Belt Integration",
+            "Emergency Medical Kit",
+            "Adaptive Cloaking Technology",
+            "Voice-Activated Commands",
+            "Non-Lethal Defensive Measures",
+            "Self-Destruct Mechanism",
+            "Biometric Security System",
+            "Dual-Mode Wheels (Street and Off-Road)",
+            "Emergency Communication Beacon",
+            "Bat Symbol Spotlight"
         ],
         "Gearshift": "Manual",
         "Status": "Available",
@@ -345,9 +370,14 @@ jsonCars = [
         "Number of Seats": 28,
         "carFeats": [
             "Invisibility Cloaking Technology",
-            "High-speed Jet Engines",
             "Advanced Amazonian Armor",
-            "Invisible to Radar"
+            "Invisible to Radar",
+            "Supersonic Flight Capability",
+            "Deflector Shields",
+            "Stealth Navigation System",
+            "Integrated Lasso of Truth Compartment",
+            "Self-Repairing Nanotech Hull",
+            "Enhanced Maneuverability"
         ],
         "Gearshift": "Automatic",
         "Status": "Retired",
@@ -362,10 +392,17 @@ jsonCars = [
         "Year": 2008,
         "Number of Seats": 8,
         "carFeats": [
-            "Invisibility",
-            "Bluetooth",
-            "Remote start",
-            "Blind spot monitoring"
+            "Brain-Computer Interface for Controls",
+            "Predictive Maintenance System",
+            "360-Degree Exterior Cameras",
+            "Embedded Health Monitoring Sensors",
+            "Quantum Encryption for Data Security",
+            "Adaptive Morphing Seats for Comfort",
+            "Dynamic Energy Recovery Suspension System",
+            "Integrated Drone Docking Station",
+            "3D Printing Onboard for Emergency Repairs",
+            "Invisible Nanotech Paint for Customizable Colors",
+            "Bioluminescent Exterior Lighting for Visibility"
         ],
         "Gearshift": "Automatic",
         "Status": "Retired",
@@ -387,7 +424,13 @@ jsonCars = [
             "Flux Capacitor for Time Travel",
             "Gull-Wing Doors",
             "Advanced In-Car Entertainment System",
-            "Adaptive Cruise Control"
+            "Adaptive Cruise Control",
+            "Energy-Efficient Solar Panel Roof",
+            "Advanced Shape Memory Alloys for Structural Adaptability",
+            "Personalized AI Mood Enhancement System",
+            "Automated In-Car Wellness and Fitness Center",
+            "Instantaneous In-Car Augmented Reality Cinema",
+            "DNA-Based Personalized Climate Control"
         ],
         "Gearshift": "Automatic",
         "Status": "Retired",
