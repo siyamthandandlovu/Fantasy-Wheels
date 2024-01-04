@@ -18,7 +18,7 @@ jsonCars = [
         "Gearshift": "Auto",
         "Status": "In Production",
         "Series/Film": "Avatar x Mercedes",
-        "Cost": "R107 089 000"
+        "Cost": "R10 427 089 000"
     },
     {
         "id": 2,
@@ -88,7 +88,7 @@ jsonCars = [
             "Anti-Fire Activator"
         ],
         "Gearshift": "Auto",
-        "Cost": "R780 000 000",
+        "Cost": "R937 000 000",
         "Status": "In Production",
         "Series/Film": "Batman & Robin"
     },
@@ -113,7 +113,7 @@ jsonCars = [
             "360-Degree Exterior Cameras"
         ],
         "Gearshift": "Auto",
-        "Cost": "R780 000 000",
+        "Cost": "R11 223 005 000",
         "Status": "In Production",
         "Series/Film": "Westworld"
     },
@@ -138,7 +138,7 @@ jsonCars = [
         "Gearshift": "Auto",
         "Status": "In Production",
         "Series/Film": "Justice League : The Synder Cut",
-        "Cost": "R70 951 000"
+        "Cost": "R35 170 951 000"
     },
     {
         "id": 7,
@@ -157,12 +157,11 @@ jsonCars = [
             "Blind spot monitoring",
             "Carbon Fiber Construction",
             "Advanced Suspension System"
-
         ],
         "Gearshift": "Auto",
         "Status": "In Production",
         "Series/Film": "Fast & Furious",
-        "Cost": "R1 023 000"
+        "Cost": "R601 023 000"
     },
     {
         "id": 8,
@@ -182,7 +181,7 @@ jsonCars = [
         "Gearshift": "Auto",
         "Status": "In Production",
         "Series/Film": "Fast & Furious",
-        "Cost": "R50 000 000"
+        "Cost": "R3 342 890 000"
     },
     {
         "id": 9,
@@ -206,7 +205,7 @@ jsonCars = [
         "Gearshift": "Auto",
         "Status": "In Production",
         "Series/Film": "West World",
-        "Cost": "R890 000 000"
+        "Cost": "R45 890 448 000"
     },
     {
         "id": 10,
@@ -240,7 +239,7 @@ jsonCars = [
         "Gearshift": "Auto",
         "Status": "In Production",
         "Series/Film": "Fast & Furious",
-        "Cost": "R55 000 000"
+        "Cost": "R655 234 000"
     },
     {
         "id": 11,
@@ -266,7 +265,7 @@ jsonCars = [
         "Gearshift": "Auto",
         "Status": "In Production",
         "Series/Film": "Baby Driver",
-        "Cost": "R1 273 400"
+        "Cost": "R11 273 400"
     },
     {
         "id": 12,
@@ -288,7 +287,7 @@ jsonCars = [
         "Gearshift": "Manual",
         "Status": "In Production",
         "Series/Film": "Scooby Doo",
-        "Cost": "R1 000 000"
+        "Cost": "R531 654 000"
     },
     {
         "id": 13,
@@ -309,7 +308,7 @@ jsonCars = [
         "Gearshift": "Auto",
         "Status": "Available",
         "Series/Film": "The Dark Knight",
-        "Cost": "R780 400 000"
+        "Cost": "R10 780 294 000"
     },
     {
         "id": 14,
@@ -330,7 +329,7 @@ jsonCars = [
         "Gearshift": "Auto",
         "Status": "In Production",
         "Series/Film": "The Transporter",
-        "Cost": "R1 000 000"
+        "Cost": "R420 070 000"
     },
     {
         "id": 15,
@@ -351,7 +350,7 @@ jsonCars = [
         "Gearshift": "Manual",
         "Status": "Available",
         "Series/Film": "Mr Bean",
-        "Cost": "R1 000 000"
+        "Cost": "R340 055 000"
     },
     {
         "id": 16,
@@ -373,7 +372,7 @@ jsonCars = [
         "Gearshift": "Manual",
         "Status": "Available",
         "Series/Film": "Transformers",
-        "Cost": "R1 000 000"
+        "Cost": "R31 400 000 000"
     },
     {
         "id": 17,
@@ -398,7 +397,7 @@ jsonCars = [
         "Gearshift": "Manual",
         "Status": "Available",
         "Series/Film": "Dark Knight II",
-        "Cost": "R1 000 000"
+        "Cost": "R81 001 198 000"
     },
     {
         "id": 18,
@@ -421,7 +420,7 @@ jsonCars = [
         "Gearshift": "Automatic",
         "Status": "Retired",
         "Series/Film": "Wonder Woman",
-        "Cost": "R1 000 000"
+        "Cost": "R345 981 000 000"
     },
     {
         "id": 19,
@@ -446,7 +445,7 @@ jsonCars = [
         "Gearshift": "Automatic",
         "Status": "Retired",
         "Series/Film": "The Avengers",
-        "Cost": "R499 000 000"
+        "Cost": "R79 293 780 000"
     },
     {
         "id": 20,
@@ -474,7 +473,7 @@ jsonCars = [
         "Gearshift": "Automatic",
         "Status": "Retired",
         "Series/Film": "Back to the Future",
-        "Cost": "R1 000 000"
+        "Cost": "R11 345 532 000"
     },
     {
         "id": 20,
@@ -493,7 +492,7 @@ jsonCars = [
         "Gearshift": "Automatic",
         "Status": "Retired",
         "Series/Film": "John Wick",
-        "Cost": "R1 000 000"
+        "Cost": "R229 000 000"
     },
     {
         "id": 21,
@@ -511,7 +510,7 @@ jsonCars = [
         "Gearshift": "Automatic",
         "Status": "Retired",
         "Series/Film": "Ghost Busters",
-        "Cost": "R1 000 000"
+        "Cost": "R413 597 000 000"
     },
     {
         "id": 21,
@@ -529,7 +528,7 @@ jsonCars = [
         "Gearshift": "Automatic",
         "Status": "Retired",
         "Series/Film": "Ghost Rider",
-        "Cost": "R81 000 000"
+        "Cost": "R981 000 000"
     }
 ];
 // Assuming you have the JSON data stored in a variable called 'jsonData'
