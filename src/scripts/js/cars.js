@@ -496,7 +496,7 @@ jsonCars = [
     },
     {
         "id": 21,
-        "src": "https://th.bing.com/th/id/OIP.N4hmcULHVF_nFO_OTymaKAHaEo?rs=1&pid=ImgDetMain",
+        "src": "https://www.thevintagenews.com/wp-content/uploads/sites/65/2020/09/1920px-1959_cadillac_ecto-1_12227773836.jpg",
         "Car Brand": "Cadillac",
         "Model": "GhostBusters Miller Meteor",
         "Year": 1859,
@@ -514,7 +514,7 @@ jsonCars = [
     },
     {
         "id": 21,
-        "src": "src/images/ghost-rider-car-full.jpg",
+        "src": "https://th.bing.com/th/id/OIP.N4hmcULHVF_nFO_OTymaKAHaEo?rs=1&pid=ImgDetMain",
         "Car Brand": "Cadillac",
         "Model": "GhostRider",
         "Year": 1859,
