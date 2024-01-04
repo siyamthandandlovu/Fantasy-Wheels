@@ -47,7 +47,7 @@ jsonCars = [
         "src": "https://manilashaker.com/wp-content/uploads/2016/02/mutt-cutts-dog-mobile-image-philippines-.jpg",
         "Car Brand": "Mutt Cuts",
         "Model": "Bambridge 68",
-        "Year": 2308,
+        "Year": 1995,
         "Number of Seats": 6,
         "carFeats": [
             "Shaggy Dog Fur Exterior",
@@ -94,7 +94,7 @@ jsonCars = [
     },
     {
         "id": 5,
-        "src": "src/images/westworld lux suv victor-martinez-veh-luxsuv-05-v3-190206-vm.jpg",
+        "src": "https://cdna.artstation.com/p/assets/images/images/026/766/102/small/victor-martinez-veh-luxsuv-05-v3-190206-vm.jpg?1589661535",
         "Car Brand": "Delos",
         "Model": "Maverick",
         "Year": 2308,
@@ -119,10 +119,10 @@ jsonCars = [
     },
     {
         "id": 6,
-        "src": "src/images/included camera shot of batfleck mercedes f751f8c-mercedes-justiceleague-08.jpg",
+        "src": "https://acnews.blob.core.windows.net/imgnews/large/NAZ_1cea2c1eef6d4b3ebe5c24a5037306f1.jpg",
         "Car Brand": "Mercedes-Benz",
         "Model": "The Batfleck",
-        "Year": 2041,
+        "Year": 2021,
         "Number of Seats": 2,
         "carFeats": [
             "Carbon Ceramic Brake System",
@@ -142,7 +142,7 @@ jsonCars = [
     },
     {
         "id": 7,
-        "src": "src/images/Fast furious Letty Chevrolet.jpg",
+        "src": "http://speedhunters-wp-production.s3.amazonaws.com/wp-content/uploads/2014/08/19010021/65-Corvette-23-copy-1200x800.jpg",
         "Car Brand": "Jenson",
         "Model": "Interceptor",
         "Year": 1973,
@@ -166,10 +166,10 @@ jsonCars = [
     },
     {
         "id": 8,
-        "src": "src/images/lamborghini-huracan-performante-launch-south-africa-johannesburg-zero2turbo-4.jpg",
+        "src": "https://live.staticflickr.com/1730/41762919835_9c37db6749_b.jpg",
         "Car Brand": "Lamborghini",
         "Model": "Hurucan",
-        "Year": 2018,
+        "Year": 2015,
         "Number of Seats": 4,
         "carFeats": [
             "Nitrous Oxide Boost System",
@@ -186,7 +186,7 @@ jsonCars = [
     },
     {
         "id": 9,
-        "src": "src/images/westworldubercarvictor-martinez-veh-rideshare-frontperspective-v01-190208-vm.jpg",
+        "src": "https://thegadgetflow.com/wp-content/uploads/2019/10/Biomega-EV-Battery-Powered-Urban-Vehicle-05-1200x800.jpg",
         "Car Brand": "Delos",
         "Model": "LA 48 Rideshare",
         "Year": 2308,
@@ -210,7 +210,7 @@ jsonCars = [
     },
     {
         "id": 10,
-        "src": "src/images/furious-charger.jpg",
+        "src": "https://b.fssta.com/uploads/2017/03/032717_motor_fast_furious.vresize.1200.630.high.24.jpg",
         "Car Brand": "Mustang",
         "Model": "La Familia X",
         "Year": 2008,
@@ -270,7 +270,7 @@ jsonCars = [
     },
     {
         "id": 12,
-        "src": "src/images/scooby doo van 2087aa40f93_hd_1972-z-movie-car-scooby-doo.jpg",
+        "src": "https://dealeraccelerate-all.s3.amazonaws.com/ideal/images/3/5/7/357/22087aa40f93_hd_1972-z-movie-car-scooby-doo.jpg",
         "Car Brand": "Mystery Machine",
         "Model": "Scooby Van 2000",
         "Year": 2002,
@@ -292,7 +292,7 @@ jsonCars = [
     },
     {
         "id": 13,
-        "src": "src/images/Bale mobile 1.jpg",
+        "src": "https://i0.wp.com/batman-news.com/wp-content/uploads/2014/09/DarkKnight_Tumbler_4WheelPartsCrop.jpg?fit=1200%2C675&quality=80&strip=info&ssl=1",
         "Car Brand": "Bruce Wayne Enterprises",
         "Model": "Dark Knight II Tumbler",
         "Year": 2008,
@@ -334,7 +334,7 @@ jsonCars = [
     },
     {
         "id": 15,
-        "src": "src/images/simple clear image of mr beans bright green car.jfif",
+        "src": "https://c1.staticflickr.com/7/6005/5960386635_f3b5406c57_b.jpg",
         "Car Brand": "Bean",
         "Model": " The Teddy",
         "Year": 1972,
@@ -355,7 +355,7 @@ jsonCars = [
     },
     {
         "id": 16,
-        "src": "src/images/optimus-van-1.webp",
+        "src": "https://www.gannett-cdn.com/-mm-/8d220fe22b97164c3a0b025b4a321e45d8da06ac/c=0-459-2448-1836/local/-/media/USATODAY/USATODAY/2014/06/16/1402937666000-OptimusPrimecorrect.jpg?width=2448&height=1377&fit=crop&format=pjpg&auto=webp",
         "Car Brand": "Transformers",
         "Model": "Optimus Prime",
         "Year": 1980,
@@ -380,7 +380,7 @@ jsonCars = [
         "src": "https://wallpaperaccess.com/full/3908257.jpg",
         "Car Brand": "DC",
         "Model": "Batman Motorcycle",
-        "Year": 1980,
+        "Year": 2010,
         "Number of Seats": 2,
         "carFeats": [
             "Detachable Escape Pods",
@@ -402,7 +402,7 @@ jsonCars = [
     },
     {
         "id": 18,
-        "src": "src/images/diana-jet.jpg",
+        "src": "https://i.pinimg.com/originals/31/02/09/3102091dde3dc34e341876f6051bf41e.jpg",
         "Car Brand": "DC",
         "Model": "Diana Invisible Jet",
         "Year": 1980,
@@ -478,7 +478,7 @@ jsonCars = [
     },
     {
         "id": 20,
-        "src": "src/images/john-wick-mustang.webp",
+        "src": "",
         "Car Brand": "Mustang",
         "Model": "John Wick",
         "Year": 1981,
