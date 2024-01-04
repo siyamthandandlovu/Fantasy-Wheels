@@ -3,7 +3,7 @@ console.log('Welcome to Fantasy Wheels ^_^');
 jsonCars = [
     {
         "id": 1,
-        "src": "src/images/12-mercedes-benz-vehicles-concept-cars-vision-avtr-3400x1440.png",
+        "src": "https://automotiva.com.ar/wp-content/uploads/2020/01/Mercedes-Benz_Vision_AVTR-3.jpg",
         "Car Brand": "Mercedes-Benz",
         "Model": "VISION AVTR",
         "Year": 2122,
@@ -22,7 +22,7 @@ jsonCars = [
     },
     {
         "id": 2,
-        "src": "src/images/The Bumble Bee car.jpg",
+        "src": "https://wallpapercave.com/wp/wp1902563.jpg",
         "Car Brand": "Chevrolet",
         "Model": "Bumblebee B127",
         "Year": 2013,
@@ -44,7 +44,7 @@ jsonCars = [
     },
     {
         "id": 3,
-        "src": "src/images/Dumb and Dumber Car 1436991864-0876ea6aaed85d846d5f06daf1fb12af.jpg",
+        "src": "https://manilashaker.com/wp-content/uploads/2016/02/mutt-cutts-dog-mobile-image-philippines-.jpg",
         "Car Brand": "Mutt Cuts",
         "Model": "Bambridge 68",
         "Year": 2308,
@@ -69,7 +69,7 @@ jsonCars = [
     },
     {
         "id": 4,
-        "src": "src/images/Adam West batmobile.jpg",
+        "src": "https://cdn1.mecum.com/auctions/sc0521/sc0521-462460/images/25-1617110956084.jpg?1618886641000",
         "Car Brand": "DC",
         "Model": "Adam West Bat Mobile",
         "Year": 1970,
