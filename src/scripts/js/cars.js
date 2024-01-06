@@ -476,7 +476,7 @@ jsonCars = [
         "Cost": "R11 345 532 000"
     },
     {
-        "id": 20,
+        "id": 21,
         "src": "https://i.pinimg.com/originals/14/24/f6/1424f64327f2957ae55453d6157d0417.jpg",
         "Car Brand": "Mustang",
         "Model": "John Wick",
@@ -495,7 +495,7 @@ jsonCars = [
         "Cost": "R229 000 000"
     },
     {
-        "id": 21,
+        "id": 22,
         "src": "https://www.thevintagenews.com/wp-content/uploads/sites/65/2020/09/1920px-1959_cadillac_ecto-1_12227773836.jpg",
         "Car Brand": "Cadillac",
         "Model": "GhostBusters Miller Meteor",
@@ -513,7 +513,7 @@ jsonCars = [
         "Cost": "R413 597 000 000"
     },
     {
-        "id": 21,
+        "id": 23,
         "src": "https://th.bing.com/th/id/OIP.N4hmcULHVF_nFO_OTymaKAHaEo?rs=1&pid=ImgDetMain",
         "Car Brand": "Cadillac",
         "Model": "GhostRider",
