@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<!--Siyamthanda Ndlovu-->
 <html>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.9">
-
+    <link rel="icon" href="src/images/icon.png">
     <title>Fantasy Wheels</title>
-    <meta http-equiv="refresh" content="15">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
@@ -18,14 +16,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <!--Adding the Bootstrap 5-->
+ 
 
     <style>
         body {
             overflow-x: hidden;
         }
 
-        /*Hide horizontal scroll bar*/
         .card-container {
             display: flex;
             flex-wrap: wrap;
@@ -37,18 +34,17 @@
 
 <body>
 
-    <div class="">
+    <div>
         <header class=" flex-wrap justify-content-center py-3 mb-4 ">
             <img class="mx-auto d-block img-fluid " src="src/images/HorizontalLogoPurple.png" class=" start-50 my-6"
                 style="width: 14%;">
 
-            <h1 class="text-center">FANTASY WHEELS</h1>
+            <h1 class="text-center fw-bold fs-1">FANTASY WHEELS</h1>
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="#" class="nav-link px-2 link-dark">Home</a></li>
                 <li><a href="#" class="nav-link px-2 link-dark" data-bs-toggle="modal"
                         data-bs-target="#profileModal">Contact</a></li>
-                <!--                 <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
- -->
+              
             </ul>
 
             <h4 class="text-center mx-5">Fantasy Wheels is a collection of cars from all of our favourite movies and
@@ -58,15 +54,6 @@
     </div>
 
     <div class="divBody">
-
-        <div class="divLogoHead position-fixed px-2 py-5">
-            <div>
-                <img src="src/images/HorizontalLogoPurple.png"
-                    class="imgHeadLogo position-absolute start-50 translate-middle" style="width: 20%;">
-            </div>
-            <br>
-
-        </div>
 
 
         <div>
@@ -105,35 +92,42 @@
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="profileModalLabel">Developer Profile </h5>
+                            <h5 class="modal-title fw-bold" id="profileModalLabel">Fantasy Wheels</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="row">
-                                <div class="col-4">
-                                    <img src="src/images/devprofile3.png" alt="Profile Image"
+                                <div class="col-3">
+                                    <img src="src/images/shade.jpg" alt="Profile Image"
                                         class="img-fluid rounded-circle">
                                 </div>
-                                <div class="col-8">
-                                    <p><h6>Hi there👋 <br>I’m Siyamthanda Ndlovu 😄</h6>
-                                        I am a passionate individual with diverse
+                                <div class="col-9">
+                                    <h5>About the website</h5>
+                                    This website is an altered version of an assigment I completed in my web development course, <a href="https://www.up.ac.za/yearbooks/2024/EBIT-faculty/UG-modules/view/COS%20216" 
+                                    class="link-dark">COS 216 Netcentric Computer Systems</a>, that I completed in early 2023. 
+                                    The repo can be found at : <a href="https://github.com/thunderain/Fantasy-Wheels" class="link-dark">Fantasy Wheels GitHub </a> 
+                                    <br><br>
+
+                                    <h5>About the developer</h5>
+                                    <p><h6>Hi there👋🏾 <br>I'm Siyamthanda Ndlovu 😄</h6>
+                                        I'm a passionate individual with diverse
                                         interests in art, film & television,
                                         graphic design, web development, IT education, and dev ops.<br><br>
 
                                         Currently, I am focused on developing a portfolio website for my graphic
                                         design company, Ronoh Media: <a
-                                            href="https://thunderain.github.io/Ronoh-Media/homepage">Ronoh Media
+                                            href="https://thunderain.github.io/Ronoh-Media/homepage" class="link-dark">Ronoh Media
                                             Portfolio✨</a><br><br>
 
-                                        🌱 I’m also learning DevOps tools in preperation for my position as the 2024
+                                        🌱 I'm also learning DevOps tools in preperation for my position as the 2024
                                         Computer Science Department Coordinator at <a
-                                            href="https://www.linkedin.com/company/bluecranespace/">Blue Crane
+                                            href="https://www.linkedin.com/company/bluecranespace/" class="link-dark">Blue Crane
                                             Space</a>🔭<br><br>
 
                                         Additionally, I’m a final year Computer Science student at the University of
                                         Pretoria⚡You
                                         can check out information on my degree here: <a
-                                            href="https://www.up.ac.za/yearbooks/2023/EBIT-faculty/UD-programmes/view/12134001#fin">BSc
+                                            href="https://www.up.ac.za/yearbooks/2023/EBIT-faculty/UD-programmes/view/12134001#fin" class="link-dark">BSc
                                             Computer
                                             Science</a><br><br></p>
 
@@ -141,17 +135,15 @@
                                             <div class="connectWithMe">
                                                 <p>Connect with me:</p>
                                                 <a class="link-dark" href="https://github.com/thunderain"><i class="bi bi-github mx-2" style="font-size: 1.5rem;"></i></a>
-                                                <a class="link-dark" href="https://www.behance.net/gallery/176596729/Graphic-Design-Portfolio"><i class="bi bi-behance mx-2" style="font-size: 1.5rem;"></i></a>
-                                                <a class="link-dark" href="mailto:ronoh.media@proton.me" title="Copy email address to clipboard"><i class="bi bi-envelope mx-2" style="font-size: 1.5rem;"></i></a>
                                                 <a class="link-dark" href="https://www.linkedin.com/in/siyamthanda-ndlovu-132271258"><i class="bi bi-linkedin mx-2" style="font-size: 1.5rem;"></i></a>
+                                                <a class="link-dark" href="mailto:ronoh.media@proton.me" title="Copy email address to clipboard"><i class="bi bi-envelope mx-2" style="font-size: 1.5rem;"></i></a>
+                                                <a class="link-dark" href="https://www.behance.net/gallery/176596729/Graphic-Design-Portfolio"><i class="bi bi-behance mx-2" style="font-size: 1.5rem;"></i></a>
                                                 <br><br>
                                                                           
-                                              </div>
+                                            </div>
 
-                                </div>
+ </div>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -173,8 +165,7 @@
                     <li><a href="#" class="nav-link px-2 link-dark">Home</a></li>
                     <li><a href="#" class="nav-link px-2 link-dark" data-bs-toggle="modal"
                             data-bs-target="#profileModal">Contact</a></li>
-                    <!--                     <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
- -->
+
                 </ul>
             </footer>
 
